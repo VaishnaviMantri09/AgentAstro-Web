@@ -80,7 +80,7 @@ const StoryPage = () => {
       answer: 'Agent Astro is built for Regulatory Affairs professionals, Medical Device developers, Startups and multinational companies navigating U.S. FDA requirements, and Consultants specializing in FDA submissions.',
     },
     {
-      question: 'What is AgentAstro ?',
+      question: 'What is AgentAstro?',
       answer: 'Agent Astro is an AI-powered regulatory intelligence tool designed specifically for medical device companies. We help teams accelerate the FDA approval process by simplifying research, identifying predicate devices, and surfacing key insights from regulatory databases like 510(k), De Novo, and PMA.',
     },
     {
@@ -122,18 +122,11 @@ const StoryPage = () => {
       image: '/Team/adam.png'
     },
     {
-      name: 'Jay Litkey',
-      role: 'Head of FinOps & Cloud',
-      bio: 'Jay is an accomplished entrepreneur and executive with over 25 years’ experience leading and scaling enterprise SaaS, and companies rapidly.',
+      name: 'Dr. Axel Gedeon Mengara',
+      role: 'Chief Technology Officer',
+      bio: 'Axel is AI Leader with a PhD and 10+ years of experience specializing in leading the rapid design, development, and deployment  of AI products.',
       color: 'from-blue-400 to-cyan-500',
-      image: '/Team/jay.png'
-    },
-    {
-      name: 'Dr. Amanda Foster',
-      role: 'Head of Regulatory Intelligence',
-      bio: 'PhD in Biomedical Engineering, former FDA reviewer with deep expertise in 510(k) and De Novo pathways.',
-      color: 'from-green-400 to-teal-500',
-      image: '/Team/amanda.jpg'
+      image: '/Team/axel.png'
     },
   ];
 
@@ -421,12 +414,12 @@ const StoryPage = () => {
               Meet the Team
             </h2>
           </div>
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
                 className={`group transition-all duration-1000 transform ${isVisible['team-section'] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                  } card-3d hover-lift`}
+                  } card-3d hover-lift `}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="bg-white rounded-3xl p-8 border border-white/20 transition-all duration-500 hover:scale-110 hover:rotate-1 text-center relative overflow-hidden group-hover:shadow-2xl hover-glow animate-float-slow">
