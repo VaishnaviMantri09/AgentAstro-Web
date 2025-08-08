@@ -100,7 +100,7 @@ const FeaturesPage = () => {
                     <div className="max-w-lg mx-auto md:mx-0">
                         <h2
                             style={{
-                                color: 'black',
+                                color: 'white',
                                 WebkitTextStroke: '1.5px #1e40af',
 
                             }}
@@ -163,13 +163,13 @@ const FeaturesPage = () => {
             <Navbar />
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center py-12">
-                    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
                         Your Gateway for Streamlined
-                        <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent block">
+                        <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-white block">
                             Regulatory Excellence
                         </span>
                     </h1>
-                    <p className="text-xl text-slate-900 max-w-3xl mx-auto leading-relaxed mb-4">
+                    <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-4">
                         Explore our powerful features crafted to simplify your regulatory process and speed up your product launch.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
