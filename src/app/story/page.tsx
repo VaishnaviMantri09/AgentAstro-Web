@@ -413,32 +413,36 @@ const StoryPage = () => {
               Meet the Team
             </h2>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl w-full mx-auto mb-20">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
                 className={`group transition-all duration-1000 transform ${isVisible['team-section'] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                  } card-3d hover-lift `}
+                  } card-3d hover-lift`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="bg-white rounded-3xl p-8 border border-white/20 transition-all duration-500 hover:scale-110 hover:rotate-1 text-center relative overflow-hidden group-hover:shadow-2xl hover-glow animate-float-slow">
+                <div className="bg-white rounded-3xl p-8 border border-white/20 transition-all duration-500 hover:scale-110 hover:rotate-1 text-center relative overflow-hidden group-hover:shadow-2xl hover-glow animate-float-slow h-full flex flex-col">
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${member.color.replace(
                       'from-',
                       'from-'
                     ).replace('to-', 'to-').replace('-400', '-400/10').replace('-500', '-400/10')} opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient`}
                   ></div>
-                  <div className="relative z-10">
+
+                  <div className="relative z-10 flex flex-col items-center justify-center flex-grow">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-32 h-32 mx-auto mb-6 rounded-full object-cover object-top group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-slow"
                     />
-                    <h3 className="text-xl font-bold mb-2 text-gray-900 animate-slideInDown">{member.name}</h3>
-                    <p className="text-blue-900/90 font-semibold mb-4 animate-fadeIn" style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
+                    <h3 className="text-xl font-bold mb-2 text-gray-900 animate-slideInDown text-center">
+                      {member.name}
+                    </h3>
+                    <p className="text-blue-900/90 font-semibold mb-4 animate-fadeIn text-center" style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
                       {member.role}
                     </p>
-                    <p className="text-gray-600 text-bold leading-relaxed animate-slideInUp" style={{ animationDelay: `${index * 0.1 + 0.4}s` }}>
+                    <p className="text-gray-600 font-medium leading-relaxed animate-slideInUp text-center max-w-xs mx-auto" style={{ animationDelay: `${index * 0.1 + 0.4}s` }}>
                       {member.bio}
                     </p>
                   </div>
@@ -455,11 +459,14 @@ const StoryPage = () => {
               }`}
             style={{ animationDelay: '0.5s' }}
           >
-            <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Strategic Advisors</h3>
+            <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+              Strategic Advisors
+            </h3>
             <p className="text-blue-100 text-lg max-w-2xl mx-auto">
               Guided by regulatory experts and industry leaders who understand the challenges you face.
             </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {advisors.map((advisor, index) => (
               <div
@@ -468,20 +475,26 @@ const StoryPage = () => {
                   }`}
                 style={{ animationDelay: `${0.6 + index * 0.1}s` }}
               >
-                <div className="bg-blue-900 rounded-3xl p-8 border border-white/30  transition-all duration-500 hover:scale-110 hover:-rotate-1 text-center group-hover:shadow-2xl">
-                  <img
-                    src={advisor.image}
-                    alt={advisor.name}
-                    className="w-32 h-32 mx-auto mb-6 rounded-full object-cover object-top group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-slow"
-                  />
-                  <h4 className="text-xl font-bold mb-2 text-white">{advisor.name}</h4>
-                  <p className="text-blue-100 text-medium leading-relaxed">{advisor.bio}</p>
+                <div className="bg-blue-900 rounded-3xl p-8 border border-white/30 transition-all duration-500 hover:scale-110 hover:-rotate-1 text-center group-hover:shadow-2xl h-full flex flex-col">
+                  <div className="flex flex-col items-center justify-center flex-grow">
+                    <img
+                      src={advisor.image}
+                      alt={advisor.name}
+                      className="w-32 h-32 mx-auto mb-6 rounded-full object-cover object-top group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-slow"
+                    />
+                    <h4 className="text-xl font-bold mb-4 text-white text-center">
+                      {advisor.name}
+                    </h4>
+                    <p className="text-blue-100 font-medium leading-relaxed text-center max-w-xs mx-auto">
+                      {advisor.bio}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section >
+      </section>
 
       <section id="faq-section" data-animate className="px-6 py-4 lg:px-4">
         <div className="mx-auto max-w-4xl">
@@ -915,5 +928,3 @@ const StoryPage = () => {
 };
 
 export default StoryPage;
-
-
