@@ -201,15 +201,15 @@ const StoryPage = () => {
       <section className="relative px-3 py-12 lg:px-3 overflow-hidden">
         <div className="relative mx-auto max-w-4xl text-center">
           <div className="animate-slideInDown stagger-2">
-            <h2 className="text-4xl lg:text-4xl font-extrabold mb-7 text-blue-900">
+            <h2 className="text-4xl lg:text-4xl font-extrabold mb-7 text-white">
               Behind the Journey
             </h2>
-            <p className="text-xl lg:text-xl font-bold mb-8  bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-blue-900 leading-tight animate-pulseText hover-lift">
+            <p className="text-xl lg:text-xl font-bold mb-8  bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-white/90 leading-tight animate-pulseText hover-lift">
               Every great path begins with a single step, and ours started with a shared vision to revolutionize the FDA 510(k) approval process through intelligent AI automation.
             </p>
             <div className="flex justify-center animate-scaleIn stagger-4" >
               <Link href="/started">
-                <button className="group relative flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300" >
+                <button className="group relative flex items-center gap-2 text-blue-900 font-semibold hover:text-blue-700 transition-all duration-300" >
                   Start Your Journey
                   <span className="absolute left-0 bottom-0 h-0.5 bg-blue-600 w-0 group-hover:w-full transition-all duration-300" > </span>
                   < ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -223,7 +223,7 @@ const StoryPage = () => {
       <section className="px-4 py-5 lg:px-6 ">
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-black via-blue-900 bg-clip-text text-transparent animate-gradient">
+            <h2 className="text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-gradient">
               Our Evolution
             </h2>
           </div>
@@ -403,7 +403,6 @@ const StoryPage = () => {
         </div>
       </section >
 
-
       <section id="team-section" data-animate className="px-6 py-10 lg:px-12 lg:py-24 xl:px-16 xl:py-16">
         <div className="mx-auto max-w-7xl">
           <div
@@ -414,7 +413,7 @@ const StoryPage = () => {
               Meet the Team
             </h2>
           </div>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl w-full mx-auto mb-20">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -435,8 +434,6 @@ const StoryPage = () => {
                       alt={member.name}
                       className="w-32 h-32 mx-auto mb-6 rounded-full object-cover object-top group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce-slow"
                     />
-
-
                     <h3 className="text-xl font-bold mb-2 text-gray-900 animate-slideInDown">{member.name}</h3>
                     <p className="text-blue-900/90 font-semibold mb-4 animate-fadeIn" style={{ animationDelay: `${index * 0.1 + 0.2}s` }}>
                       {member.role}
@@ -452,7 +449,6 @@ const StoryPage = () => {
               </div>
             ))}
           </div>
-
 
           <div
             className={`text-center mb-12 transition-all duration-1000 transform ${isVisible['team-section'] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -485,7 +481,7 @@ const StoryPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       <section id="faq-section" data-animate className="px-6 py-4 lg:px-4">
         <div className="mx-auto max-w-4xl">

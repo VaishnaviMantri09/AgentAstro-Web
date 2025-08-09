@@ -62,7 +62,7 @@ export const Navbar = () => {
                         <nav className="hidden md:flex items-center space-x-8">
                             <button
                                 onClick={() => handleNavigation('/features')}
-                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-1 ${isActive('/features') ? 'text-gray-900' : ''
+                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-0.2 text-lg ${isActive('/features') ? 'text-gray-900' : ''
                                     }`}
                             >
                                 Features
@@ -72,7 +72,7 @@ export const Navbar = () => {
                             </button>
                             <button
                                 onClick={() => handleNavigation('/pricing')}
-                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-1 ${isActive('/pricing') ? 'text-gray-900' : ''
+                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-0.2 text-lg  ${isActive('/pricing') ? 'text-gray-900' : ''
                                     }`}
                             >
                                 Pricing
@@ -82,7 +82,7 @@ export const Navbar = () => {
                             </button>
                             <button
                                 onClick={() => handleNavigation('/updates')}
-                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-1 ${isActive('/updates') ? 'text-gray-900' : ''
+                                className={`relative font-bold text-black hover:text-blue-900 transition-colors pb-0.2 text-lg  ${isActive('/updates') ? 'text-gray-900' : ''
                                     }`}
                             >
                                 Updates
@@ -92,7 +92,7 @@ export const Navbar = () => {
                             </button>
                             <button
                                 onClick={() => handleNavigation('/story')}
-                                className={`relative font-bold text-black hover:text-black-900 transition-colors pb-1 ${isActive('/story') ? 'text-gray-900' : ''
+                                className={`relative font-bold text-black hover:text-black-900 transition-colors pb-0.2 text-lg ${isActive('/story') ? 'text-gray-900' : ''
                                     }`}
                             >
                                 Our Story
@@ -135,7 +135,7 @@ export const Navbar = () => {
                             <nav className="px-6 pb-4 space-y-4">
                                 <button
                                     onClick={() => handleNavigation('/features')}
-                                    className={`block py-2 transition-colors w-full text-left ${isActive('/features')
+                                    className={`block py-2 transition-colors w-full text-left  text-lg ${isActive('/features')
                                         ? 'text-blue-600 font-medium border-l-2 border-blue-600 pl-3'
                                         : 'text-gray-600 hover:text-gray-900'
                                         }`}
@@ -144,7 +144,7 @@ export const Navbar = () => {
                                 </button>
                                 <button
                                     onClick={() => handleNavigation('/pricing')}
-                                    className={`block py-2 transition-colors w-full text-left ${isActive('/pricing')
+                                    className={`block py-2 transition-colors w-full text-left  text-lg ${isActive('/pricing')
                                         ? 'text-blue-600 font-medium border-l-2 border-blue-600 pl-3'
                                         : 'text-gray-600 hover:text-gray-900'
                                         }`}
@@ -153,7 +153,7 @@ export const Navbar = () => {
                                 </button>
                                 <button
                                     onClick={() => handleNavigation('/updates')}
-                                    className={`block py-2 transition-colors w-full text-left ${isActive('/updates')
+                                    className={`block py-2 transition-colors w-full text-left  text-lg  ${isActive('/updates')
                                         ? 'text-blue-600 font-medium border-l-2 border-blue-600 pl-3'
                                         : 'text-gray-600 hover:text-gray-900'
                                         }`}
@@ -162,7 +162,7 @@ export const Navbar = () => {
                                 </button>
                                 <button
                                     onClick={() => handleNavigation('/story')}
-                                    className={`block py-2 transition-colors w-full text-left ${isActive('/story')
+                                    className={`block py-2 transition-colors w-full text-left text-lg  ${isActive('/story')
                                         ? 'text-blue-600 font-medium border-l-2 border-blue-600 pl-3'
                                         : 'text-gray-600 hover:text-gray-900'
                                         }`}

@@ -75,8 +75,6 @@ export default function PricingPage() {
                 return;
             }
 
-
-
             const response = await fetch('/api/create-checkout-session', {
                 method: 'POST',
                 headers: {
@@ -253,16 +251,16 @@ export default function PricingPage() {
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 relative z-10">
 
                 <div className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-4 sm:mb-6 drop-shadow-sm leading-tight">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 drop-shadow-sm leading-tight">
                         Flexible Pricing For Your Regulatory Needs
                     </h1>
-                    <p className={`text-base sm:text-lg text-black mx-auto max-w-3xl mb-4 sm:mb-6 px-2 leading-relaxed transition-all duration-1000 ${isVisible ? 'animate-fade-in-up stagger-2' : 'opacity-0'}`}>
+                    <p className={`text-base sm:text-lg text-white/90 mx-auto max-w-3xl mb-4 sm:mb-6 px-2 leading-relaxed transition-all duration-1000 ${isVisible ? 'animate-fade-in-up stagger-2' : 'opacity-0'}`}>
                         Unlock the best value for your compliance needs. Our transparent plans scale with your business, whether you're an individual, a growing team, or an enterprise. Pick a billing cycle and discover what's right for you.
                     </p>
                 </div>
 
                 <div className={`mt-12 sm:mt-16 lg:mt-20 text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in-up stagger-3' : 'opacity-0'}`}>
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8 drop-shadow-sm animate-bounce-gentle">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-6 sm:mb-8 drop-shadow-sm animate-bounce-gentle">
                         What You Get?
                     </h2>
 
@@ -310,7 +308,7 @@ export default function PricingPage() {
                 </div>
 
                 <div className={`flex flex-col items-center justify-center mb-10 sm:mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in-up stagger-4' : 'opacity-0'}`}>
-                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-8 sm:mb-12 text-center animate-bounce-gentle">Choose Your Subscription</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-100 mb-8 sm:mb-12 text-center animate-bounce-gentle">Choose Your Subscription</h2>
                     <div className="flex items-center gap-3 sm:gap-4 animate-scale-in stagger-1">
                         <span className={`text-base sm:text-lg font-medium transition-all duration-300 ${!isYearly ? 'text-black transform scale-110' : 'text-white'}`}>
                             Monthly
