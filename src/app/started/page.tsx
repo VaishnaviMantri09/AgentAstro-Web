@@ -1,15 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import {
-    Mail,
-    Phone,
-    MapPin,
-    Send,
-    CheckCircle,
-    AlertCircle,
-    Calendar,
-    ArrowRight,
-} from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, ArrowRight, } from 'lucide-react';
 import { Navbar } from '@/sections/Navbar';
 import Footer from '@/sections/Footer';
 
@@ -126,10 +117,10 @@ export default function StartedPage() {
             <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                        <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-[#00008B] mb-4">
+                        <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-white mb-4">
                             Connect Now
                         </h1>
-                        <p className="text-xl text-[#0E3386] max-w-2xl mx-auto">
+                        <p className="text-xl text-white/90 max-w-2xl mx-auto">
                             The First Step Towards FDA Approval Starts Here. Whether you have
                             a question, need assistance, we're here to help.
                         </p>
@@ -138,7 +129,7 @@ export default function StartedPage() {
                     <div className="grid lg:grid-cols-2 gap-12 items-start">
                         <div className="space-y-8">
                             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl">
-                                <h2 className="text-3xl font-bold text-[#2a52be] mb-6">
+                                <h2 className="text-3xl font-bold text-gray-100 mb-6">
                                     Ways to Reach Us
                                 </h2>
 
