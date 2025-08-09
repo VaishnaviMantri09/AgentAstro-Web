@@ -134,7 +134,7 @@ const StoryPage = () => {
     {
       name: 'Frank Baylis',
       image: '/Advisor/frank.png',
-      bio: 'Frank Baylis is a leader in medical technology and public policy, former Member of Parliament, and currently serving as Executive Chairman of Baylis Medical Technologies.',
+      bio: 'Frank Baylis is leader in medtech and public policy, and currently serving as Executive Chairman of Baylis Medical Technologies',
     },
     {
       name: 'Lanna Millien',
@@ -915,3 +915,4 @@ const StoryPage = () => {
 };
 
 export default StoryPage;
+
