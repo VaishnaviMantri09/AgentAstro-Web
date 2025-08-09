@@ -4,21 +4,44 @@ import { MdSend } from "react-icons/md";
 import logosrc from "@/../public/logo.png";
 import { IoIosCheckbox } from "react-icons/io";
 
-
 const chatScript: { from: 'bot' | 'user'; text: string }[] = [
   { from: 'bot', text: "Hi there! I'm AgentAstro.AI – the AI that simplifies FDA 510(k) approvals. How can I help you today?" },
-  { from: 'user', text: "I wanted to know how can you help me FDA Approval?" },
-  { from: 'bot', text: "I can guide you through the FDA approval process by interpreting regulations, mapping out the necessary requirements for your specific product." },
-  { from: 'user', text: "How do you do that?" },
-  { from: 'bot', text: " Absolutely! I use AI-powered tailored recommendations to streamline your submission strategy." },
-  { from: 'user', text: "Sounds cool! How do I start?" },
-  { from: 'bot', text: "To begin, simply connect with our team. We'll assess your product details and guide you through the next steps to prepare your FDA 510(k) submission." },
-  { from: 'user', text: "Great! I'll reach out soon." },
-  { from: 'bot', text: "Looking forward to it! Remember, with AgentAstro.AI, you're not alone in the FDA approval journey. We're here to help!" },
-  { from: 'user', text: "Thanks for the info!" },
+  { from: 'user', text: "I wanted to know, Is the Aspire RX-LP6 Aspiration Catheter legally marketed? answer yes or no ?" },
+  { from: 'bot', text: "Yes.The Aspire RX- LP6 Aspiration Catheter is substantially equivalent to other legally marketed thrombus aspiration catheters.The FDA determined that the Aspire MAX 7 - 11F Mechanical Thrombectomy System and Aspire Mechanical Aspirator are substantially equivalent to legally marketed predicate devices.Similarly, the Aspiron Aspiration Catheter(K190619) is substantially equivalent to legally marketed predicate devices." },
+  { from: 'user', text: "Also could you Compare the Aspire RX-LP6 Aspiration Catheter, Aspire MAX Aspiration Catheter, Zelante DVT ClotHunter Helical Rotation Device and Merit Medical Concierge Catheters based on Intended Use, Indications for Use, Contraindications, and Target Population in a table format." },
+  {
+    from: 'bot', text: `Here's a comparison table for the Aspire RX-LP6 and Aspire MAX Aspiration Catheters:
+| Feature | Aspire RX- LP6 | Aspire MAX |
+| ------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------|
+| Intended Use | Single - use device for physicians experienced in diagnostic and interventional procedures, used with manually operated piston syringes to remove fresh, soft emboli and thrombi from coronary and peripheral vasculature | Single - use device for physicians experienced in diagnostic and interventional procedures, used with manually operated piston syringes to remove fresh, soft emboli and thrombi from peripheral and coronary vasculature |
+| Indications for Use | Removal of fresh, soft emboli and thrombi from vessels in the coronary and peripheral vasculature | Removal of fresh, soft emboli and thrombi from vessels in the peripheral vasculature |
+| Contraindications | Vessels < 2mm in diameter; removal of fibrous, adherent, or calcified material(e.g., chronic clot, atherosclerotic plaque); venous system; cerebral vasculature | Removal of fibrous, adherent, or calcified material(e.g., chronic clot and atherosclerotic plaque); neurovascular use; vessels < 2.0mm diameter for Aspire MAX 5 and < 2.5mm diameter for Aspire MAX 6 |
+| Target Population | Not specified in provided sources. | Not specified in provided sources. |`
+  },
+  { from: 'user', text: "Thank you so much for the above Information." },
   { from: 'bot', text: "You're welcome! If you have any more questions, feel free to ask anytime." },
 ];
 
+const parseMarkdownTable = (markdown: string) => {
+  const lines = markdown.trim().split('\n');
+  const tableStart = lines.findIndex(line => line.includes('|'));
+
+  if (tableStart === -1) return null;
+
+  const tableLines = lines.slice(tableStart);
+  if (tableLines.length < 3) return null;
+
+  const headers = tableLines[0].split('|').map(cell => cell.trim()).filter(cell => cell);
+  const dataRows = tableLines.slice(2).map(line =>
+    line.split('|').map(cell => cell.trim()).filter(cell => cell)
+  );
+
+  return { headers, dataRows };
+};
+
+const hasMarkdownTable = (text: string) => {
+  return text.includes('|') && text.includes('---');
+};
 
 const items = [
   "AI guidance for FDA 510(k) approvals.",
@@ -27,7 +50,6 @@ const items = [
   "Expert insights on regulatory requirements.",
 ];
 
-
 type BubbleProps = {
   from: 'bot' | 'user';
   text: string;
@@ -35,34 +57,69 @@ type BubbleProps = {
   show: boolean;
 };
 
+const Bubble = ({ from, text, delay, show }: BubbleProps) => {
+  const isTable = hasMarkdownTable(text);
+  const tableData = isTable ? parseMarkdownTable(text) : null;
 
-const Bubble = ({ from, text, delay, show }: BubbleProps) => (
-  <div
-    className={`flex ${from === 'bot' ? 'justify-start' : 'justify-end'} mb-2 md:mb-3 transition-all duration-700 ease-out ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-    style={{ transitionDelay: `${delay}ms` }}
-  >
-    {from === 'bot' && (
-      <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 shadow-md flex items-center justify-center mr-2 md:mr-3 flex-shrink-0 mt-1">
-        <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full border-2 border-gray-900 bg-black">
-          <img
-            src={logosrc.src}
-            alt="AgentAstro.AI Logo"
-            className="w-6 h-6 md:w-8 md:h-8 object-contain"
-          />
+  return (
+    <div
+      className={`flex ${from === 'bot' ? 'justify-start' : 'justify-end'} mb-2 md:mb-3 transition-all duration-700 ease-out ${show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {from === 'bot' && (
+        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 shadow-md flex items-center justify-center mr-2 md:mr-3 flex-shrink-0 mt-1">
+          <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full border-2 border-gray-900 bg-black">
+            <img
+              src={logosrc.src}
+              alt="AgentAstro.AI Logo"
+              className="w-6 h-6 md:w-8 md:h-8 object-contain"
+            />
+          </div>
         </div>
-      </div>
-    )}
-    <div className={`max-w-xs px-3 py-2 md:px-4 md:py-2 rounded-2xl shadow-sm text-xs md:text-sm leading-relaxed ${from === 'bot' ? 'bg-gray-100 text-gray-800' : 'bg-blue-600 text-white'}`}>
-      {text}
-    </div>
-    {from === 'user' && (
-      <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-blue-100 flex items-center justify-center ml-2 md:ml-3 flex-shrink-0 mt-1">
-        <MdSend className="text-blue-600 w-3 h-3 md:w-5 md:h-5" />
-      </div>
-    )}
-  </div>
-);
+      )}
 
+      <div className={`${isTable ? 'max-w-full' : 'max-w-xs'} px-3 py-2 md:px-4 md:py-2 rounded-2xl shadow-sm text-xs md:text-sm leading-relaxed ${from === 'bot' ? 'bg-gray-100 text-gray-800' : 'bg-blue-600 text-white'}`}>
+        {isTable && tableData ? (
+          <div className="overflow-x-auto">
+            <div className="mb-2 text-xs md:text-sm">
+              {text.split('\n')[0]}
+            </div>
+            <table className="min-w-full border-collapse border border-gray-300 text-xs">
+              <thead className="bg-gray-50">
+                <tr>
+                  {tableData.headers.map((header, idx) => (
+                    <th key={idx} className="border border-gray-300 px-2 py-1 text-left font-semibold text-gray-700">
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {tableData.dataRows.map((row, rowIdx) => (
+                  <tr key={rowIdx} className={rowIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    {row.map((cell, cellIdx) => (
+                      <td key={cellIdx} className="border border-gray-300 px-2 py-1 text-gray-600 align-top">
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          text
+        )}
+      </div>
+
+      {from === 'user' && (
+        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-blue-100 flex items-center justify-center ml-2 md:ml-3 flex-shrink-0 mt-1">
+          <MdSend className="text-blue-600 w-3 h-3 md:w-5 md:h-5" />
+        </div>
+      )}
+    </div>
+  );
+};
 
 const TypingBubble = () => (
   <div className="flex justify-start mb-2 md:mb-3">
@@ -77,11 +134,10 @@ const TypingBubble = () => (
     </div>
     <div className="max-w-xs px-3 py-2 md:px-4 md:py-2 rounded-2xl shadow-sm text-xs md:text-sm leading-relaxed bg-gray-100 text-gray-800 flex items-center">
       <span>Thinking...</span>
-      <span className="dot-flashing"></span>
+      <div className="dot-flashing ml-2"></div>
     </div>
   </div>
 );
-
 
 const ChatbotPanel = () => {
   const [msgs, setMsgs] = useState([chatScript[0]]);
@@ -90,18 +146,14 @@ const ChatbotPanel = () => {
   const chatEndRef = useRef<HTMLDivElement>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
-
   useEffect(() => {
     if (active >= chatScript.length) return;
-
 
     if (chatScript[active].from === 'bot') {
       setIsTyping(true);
     }
 
-
-    const delay = 18000;
-
+    const delay = 2000;
 
     const timer = setTimeout(() => {
       setMsgs((script) => [...script, chatScript[active]]);
@@ -109,10 +161,8 @@ const ChatbotPanel = () => {
       setIsTyping(false);
     }, delay);
 
-
     return () => clearTimeout(timer);
   }, [active]);
-
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -120,11 +170,8 @@ const ChatbotPanel = () => {
     }
   }, [msgs, isTyping]);
 
-
   return (
-    <div
-      className="w-full max-w-sm md:max-w-md lg:w-96 bg-white rounded-xl shadow-lg border border-gray-200 flex flex-col h-[320px] md:h-[428px] lg:h-[396px]"
-    >
+    <div className="w-full max-w-sm md:max-w-md lg:max-w-lg bg-white rounded-xl shadow-lg border border-gray-200 flex flex-col h-[320px] md:h-[428px] lg:h-[396px]">
       <div className="px-3 py-2 md:px-4 md:py-3 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-purple-50 rounded-t-xl flex-shrink-0">
         <h3 className="text-base md:text-lg font-semibold text-gray-800 flex items-center gap-2">
           <div className="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full border-2 border-gray-900 bg-black">
@@ -137,7 +184,6 @@ const ChatbotPanel = () => {
           AgentAstro
         </h3>
       </div>
-
 
       <div
         ref={chatContainerRef}
@@ -152,6 +198,7 @@ const ChatbotPanel = () => {
           <div ref={chatEndRef} className="h-1" />
         </div>
       </div>
+
       <style jsx>{`
         .dot-flashing {
           position: relative;
@@ -159,7 +206,7 @@ const ChatbotPanel = () => {
           height: 6px;
           display: inline-block;
         }
-        .dot-flashing:before, .dot-flashing:after, .dot-flashing div {
+        .dot-flashing:before, .dot-flashing:after {
           content: "";
           display: inline-block;
           position: absolute;
@@ -168,30 +215,28 @@ const ChatbotPanel = () => {
           height: 6px;
           border-radius: 50%;
           background-color: #6366f1;
-          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation: dotFlashing 0.6s infinite;
         }
         .dot-flashing:before {
           left: 0;
-          animation: dotFlashing 0.6s infinite;
+          animation-delay: 0s;
         }
         .dot-flashing:after {
           left: 8px;
-          animation: dotFlashing 0.6s 0.2s infinite;
-        }
-        .dot-flashing div {
-          left: 16px;
-          animation: dotFlashing 0.6s 0.4s infinite;
+          animation-delay: 0.2s;
         }
         @keyframes dotFlashing {
-          0% {
+          0%, 80%, 100% {
             transform: scale(0);
+            opacity: 0.5;
           }
-          50%, 100% {
+          40% {
             transform: scale(1);
+            opacity: 1;
           }
         }
       `}</style>
-    </div >
+    </div>
   );
 };
 
@@ -233,6 +278,5 @@ const WhosAgentastro = () => (
     </div>
   </div>
 );
-
 
 export default WhosAgentastro;
