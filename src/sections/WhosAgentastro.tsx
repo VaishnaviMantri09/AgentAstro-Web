@@ -153,7 +153,7 @@ const ChatbotPanel = () => {
       setIsTyping(true);
     }
 
-    const delay = 18000;
+    const delay = 5000;
 
     const timer = setTimeout(() => {
       setMsgs((script) => [...script, chatScript[active]]);
