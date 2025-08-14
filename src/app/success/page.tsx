@@ -1,14 +1,13 @@
-"use client";
-import { useEffect, useState } from "react";
+'use client';
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-export default function SuccessPage() {
+function SuccessInner() {
     const searchParams = useSearchParams();
     const sessionId = searchParams.get("session_id");
-
     const [loading, setLoading] = useState(true);
-    const [session, setSession] = useState<any>(null);
+    const [session, setSession] = useState(null);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
@@ -39,9 +38,8 @@ export default function SuccessPage() {
             }}>
             <div className="bg-white rounded-lg shadow-lg p-8 text-center max-w-xl w-full">
                 <h1 className="text-3xl font-bold mb-4 text-green-600">
-                    Thank you for your purchase!
+                    Thank you for suscribing to our services!
                 </h1>
-
                 {loading ? (
                     <p>Loading payment details...</p>
                 ) : error ? (
@@ -62,15 +60,10 @@ export default function SuccessPage() {
                                 </p>
                             } */}
                         </div>
-
-                        {/* <p className="text-sm text-gray-500 mb-4">
-                            Session ID: <span className="font-mono">{sessionId}</span>
-                        </p> */}
                     </>
                 ) : (
                     <p>No session information found.</p>
                 )}
-
                 <Link
                     href="/"
                     className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 mt-4 inline-block"
@@ -78,6 +71,14 @@ export default function SuccessPage() {
                     Go Home
                 </Link>
             </div>
-        </div >
+        </div>
+    );
+}
+
+export default function SuccessPage() {
+    return (
+        <Suspense>
+            <SuccessInner />
+        </Suspense>
     );
 }
