@@ -14,6 +14,9 @@ const config: Config = {
       lg: "1200px",
     },
     extend: {
+      fontFamily: {
+        switzer: ["Switzer", "sans-serif"],
+      },
       container: {
         center: true,
         padding: {
