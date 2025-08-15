@@ -15,7 +15,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        switzer: ["Switzer", "sans-serif"],
+        switzer: ["Switzer"],
       },
       container: {
         center: true,
