@@ -6,6 +6,7 @@ import Testimonials from "@/sections/Testimonials";
 import WhosAgentastro from "@/sections/WhosAgentastro";
 import Footer from "@/sections/Footer";
 import { Navbar } from "@/sections/Navbar";
+import CookieConsentBottom from "@/sections/CookieConsentBottom";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <Footer />
+      <CookieConsentBottom />
     </>
   );
 }
