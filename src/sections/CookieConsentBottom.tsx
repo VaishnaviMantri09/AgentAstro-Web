@@ -67,9 +67,13 @@ export default function CookieConsentBottom() {
             setPreferencesOpen(true);
             setShow(true);
             document.body.style.overflow = "hidden";
-            return; // Don't immediately reset overflow here
+            return;
         }
         document.body.style.overflow = "";
+    };
+
+    const getModalMaxHeight = () => {
+        return "none";
     };
 
     const enableAllCookies = () => {
@@ -294,32 +298,33 @@ export default function CookieConsentBottom() {
             backdropFilter: "blur(2px)",
         },
         modal: {
-            position: "fixed" as const,
-            left: 0,
-            right: 0,
-            bottom: 0,
+            position: "fixed" as "fixed",
+            bottom: "20px",
             zIndex: 10001,
             background: "#FFFFFF",
             borderRadius: "16px 16px 0 0",
             boxShadow: "0 -8px 32px rgba(6, 26, 64, 0.15)",
-            maxWidth: windowWidth > 600 ? 900 : "90vw",
-            margin: "0 auto",
-            padding: windowWidth > 600 ? "32px" : "16px",
-            fontFamily: "Gesta W01 Regular",
+            padding: windowWidth > 600 ? "24px 32px 0" : "16px 16px 0",
+            fontFamily: "Gesta W01 Regular" as string,
             fontSize: windowWidth > 600 ? "16px" : "14px",
+            width: "99vw",
+            boxSizing: "border-box" as "border-box",
+            maxHeight: getModalMaxHeight(),
+            left: "50%",
+            transform: "translateX(-50%)",
         },
         heading: {
-            fontSize: windowWidth > 600 ? "24px" : "20px",
+            fontSize: windowWidth > 600 ? "26px" : "22px",
             fontWeight: "600",
             color: "#061A40",
-            marginBottom: "16px",
+            marginBottom: "12px",
             marginTop: 0,
         },
         text: {
-            fontSize: windowWidth > 600 ? "16px" : "14px",
-            lineHeight: "1.6",
+            fontSize: windowWidth > 600 ? "26px" : "22px",
+            lineHeight: "1.5",
             color: "#061A40",
-            marginBottom: "24px",
+            marginBottom: "20px",
             fontWeight: "400",
         },
         link: {
@@ -332,15 +337,17 @@ export default function CookieConsentBottom() {
             gap: "12px",
             justifyContent: "flex-end",
             flexWrap: "wrap" as const,
+            marginTop: "16px",
+            paddingBottom: "24px",
         },
         buttonPrimary: {
             background: "#061A40",
             color: "#FFFFFF",
             border: "none",
             borderRadius: "8px",
-            padding: "12px 24px",
+            padding: "10px 20px",
             fontWeight: "600",
-            fontSize: "14px",
+            fontSize: "16px",
             cursor: "pointer",
             transition: "all 0.2s ease",
             fontFamily: "inherit",
@@ -350,9 +357,9 @@ export default function CookieConsentBottom() {
             color: "#061A40",
             border: "2px solid #EBEEF2",
             borderRadius: "8px",
-            padding: "10px 22px",
+            padding: "8px 18px",
             fontWeight: "600",
-            fontSize: "14px",
+            fontSize: "16px",
             cursor: "pointer",
             transition: "all 0.2s ease",
             fontFamily: "inherit",
@@ -362,9 +369,9 @@ export default function CookieConsentBottom() {
             color: "#FFFFFF",
             border: "none",
             borderRadius: "8px",
-            padding: "12px 24px",
+            padding: "10px 20px",
             fontWeight: "600",
-            fontSize: "14px",
+            fontSize: "16px",
             cursor: "pointer",
             transition: "all 0.2s ease",
             fontFamily: "inherit",
@@ -372,31 +379,31 @@ export default function CookieConsentBottom() {
         preferencesContainer: {
             background: "#EBEEF2",
             borderRadius: "12px",
-            padding: windowWidth > 600 ? "24px" : "16px",
-            marginBottom: "24px",
+            padding: windowWidth > 600 ? "20px" : "16px",
+            marginBottom: "20px",
         },
         cookieCategory: {
-            marginBottom: "20px",
+            marginBottom: "16px",
             padding: "16px",
             background: "#FFFFFF",
             borderRadius: "8px",
             border: "1px solid #EBEEF2",
         },
         categoryTitle: {
-            fontSize: "18px",
+            fontSize: "16px",
             fontWeight: "600",
             color: "#061A40",
-            marginBottom: "8px",
+            marginBottom: "6px",
             display: "flex",
             alignItems: "center",
             gap: "12px",
         },
         categoryDescription: {
-            fontSize: "14px",
+            fontSize: "13px",
             color: "#061A40",
             opacity: 0.8,
-            marginBottom: "12px",
-            lineHeight: "1.5",
+            marginBottom: "10px",
+            lineHeight: "1.4",
         },
         toggle: {
             position: "relative" as const,
@@ -429,10 +436,10 @@ export default function CookieConsentBottom() {
         essentialBadge: {
             background: "#007EA6",
             color: "#FFFFFF",
-            fontSize: "11px",
+            fontSize: "10px",
             fontWeight: "600",
-            padding: "4px 8px",
-            borderRadius: "12px",
+            padding: "3px 6px",
+            borderRadius: "10px",
             textTransform: "uppercase" as const,
             letterSpacing: "0.5px",
         },
@@ -480,8 +487,8 @@ export default function CookieConsentBottom() {
                         <p style={styles.text}>
                             We use essential cookies to make our site work. With your consent, we may also use
                             non-essential cookies to improve user experience and analyze website traffic. By
-                            clicking “Accept,” you agree to our website's cookie use as described in our Cookie
-                            Policy. You can change your cookie settings at any time by clicking “Preferences.”
+                            clicking "Accept," you agree to our website's cookie use as described in our Cookie
+                            Policy. You can change your cookie settings at any time by clicking "Preferences."
                         </p>
                         <div style={styles.buttonContainer}>
                             <button
