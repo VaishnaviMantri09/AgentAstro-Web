@@ -15,7 +15,11 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-         switzer: ["Switzer", "sans-serif"],
+        gesta: ["GESTA", "sans-serif"]
+      },
+      fontWeight: {
+        light: "300",
+        medium: "500",
       },
       container: {
         center: true,
