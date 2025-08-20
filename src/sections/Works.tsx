@@ -9,13 +9,13 @@ type Step = {
 
 const steps: Step[] = [
   {
-    title: "Ask Regulatory Questions ?",
+    title: "Ask Questions",
     description: "Use natural language for your toughest regulatory queries; no advanced search skills needed.",
     icon: "1",
     color: "from-emerald-400 to-teal-600"
   },
   {
-    title: "Discover Predicate Devices",
+    title: "Identify Predicate Devices",
     description: "Instantly access and analyze FDA 510(k) data to uncover relevant predicate devices.",
     icon: "2",
     color: "from-blue-400 to-cyan-600"
