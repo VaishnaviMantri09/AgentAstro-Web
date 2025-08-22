@@ -27,28 +27,20 @@ const FeaturesPage = () => {
             imageAlt: 'Detailed Regulatory Reporting',
         },
         {
-            id: 'data-management',
-            title: 'Secure Data Management',
-            description: 'All user activity and file transfers are protected with industry-standard encryption.In Transit,SSL/TLS encryption safeguards all communications.At Rest,AES-256 encryption secures stored data and files.',
+            id: 'secure-compliant',
+            title: 'Secure and Compliant',
+            description: 'All user activity and file transfers are protected with industry-standard encryption. It is engineered with FDA guidelines and meets HIPAA and GDPR requirements.',
             benefit: 'Enterprise protection for your sensitive information.',
-            imageUrl: '/Features/features-data-management.jpg',
-            imageAlt: 'Secure Data Management',
-        },
-        {
-            id: 'compliance-architecture',
-            title: 'Compliance-Ready Architecture',
-            description: 'Engineered to align with FDA guidelines and meet HIPAA and GDPR requirements.',
-            benefit: 'Confidence in every query and report.',
-            imageUrl: '/Features/features-compliance.jpg',
-            imageAlt: 'Compliance-Ready Architecture',
+            imageUrl: '/Features/features-secure-compliant.jpg',
+            imageAlt: 'Secure and Compliant',
         },
         {
             id: 'device-comparison',
-            title: 'Predicate Device Comparison',
+            title: 'Device Comparison',
             description: 'Easily compare device specs, testing protocols, and regulatory pathways side by side, in one view.',
             benefit: 'Spot differences, justify similarities, and make faster decisions.',
             imageUrl: '/Features/features-comparison.jpg',
-            imageAlt: 'Predicate Device Comparison',
+            imageAlt: 'Device Comparison',
         },
     ];
 
@@ -104,16 +96,16 @@ const FeaturesPage = () => {
                                 WebkitTextStroke: '1.5px #1e40af',
 
                             }}
-                            className="text-3xl font-bold mb-6 leading-tight">
+                            className="text-3xl font-bold mb-6 leading-tight font-gesta">
                             {feature.title}
                         </h2>
 
-                        <p className="text-xl text-white  mb-3 leading-relaxed">
+                        <p className="text-xl text-white  mb-3 leading-relaxed font-gesta">
                             {feature.description}
                         </p>
                         <div className="flex items-start mb-2 p-4 bg-gray-50 rounded-xl">
                             <BsArrowRightCircleFill className="w-5 h-5 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
-                            <span className="text-gray-800 font-semibold">
+                            <span className="text-gray-800 text-xl font-semibold font-gesta">
                                 {feature.benefit}
                             </span>
                         </div>
@@ -135,7 +127,7 @@ const FeaturesPage = () => {
                                     target.src = `data:image/svg+xml;base64,${btoa(`
                     <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
                     <rect width="100%" height="100%" fill="#f3f4f6"/>
-                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#6b7280" font-family="system-ui" font-size="18">
+                    <text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="#6b7280" font-family="gesta" font-size="18">
                         ${feature.title}
                     </text>
                     </svg>
@@ -163,13 +155,13 @@ const FeaturesPage = () => {
             <Navbar />
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center py-12">
-                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+                    <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-gesta">
                         Your Gateway for Streamlined
-                        <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-white block">
+                        <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-white block font-gesta">
                             Regulatory Excellence
                         </span>
                     </h1>
-                    <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-4">
+                    <p className="text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-4 font-gesta">
                         Explore our powerful features crafted to simplify your regulatory process and speed up your product launch.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
@@ -184,7 +176,7 @@ const FeaturesPage = () => {
                                 className="text-center p-6 bg-white rounded-xl shadow-sm border border-gray-200"
                             >
                                 <stat.icon className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                                <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                                <div className="text-2xl font-bold text-gray-900 font-gesta">{stat.value}</div>
                             </div>
                         ))}
                     </div>
@@ -201,14 +193,14 @@ const FeaturesPage = () => {
                 </div>
 
                 <div className="text-center bg-gradient-to-r from-sky-100 to-blue-400 rounded-3xl p-12 text-indigo-900 mt-16 mb-16">
-                    <h3 className="text-3xl font-bold mb-4"> We would Be Glad to Schedule a Call</h3>
-                    <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+                    <h3 className="text-3xl font-bold mb-4 font-gesta"> We would Be Glad to Schedule a Call</h3>
+                    <p className="text-2xl opacity-90 mb-8 max-w-2xl mx-auto font-gesta">
                         A lot of medical device companies already using our platform to
                         accelerate their regulatory submissions.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/started">
-                            <button className="px-8 py-4 border-2 border-blue-900 text-black font-semibold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
+                            <button className="font-gesta px-8 py-4 border-2 border-blue-900 text-black font-semibold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
                                 Join Us
                             </button>
                         </Link>
