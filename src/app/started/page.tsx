@@ -354,7 +354,7 @@ export default function StartedPage() {
                                 </svg>
                             </button>
                             <iframe
-                                src="https://cal.com/agentsify/15min"
+                                src="https://calendly.com/adam-agentastro/30min"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 'none', borderRadius: '16px' }}
@@ -370,3 +370,4 @@ export default function StartedPage() {
         </div >
     );
 }
+
