@@ -278,6 +278,11 @@ Plans are available on a monthly or annual basis.
       name: 'Jay Litkey',
       image: '/Advisor/jay.png',
       bio: 'Jay Litkey, a serial SaaS entrepreneur with over 25 years of experience who founded Embotics, currently serves as SVP at Flexera and advisor to AgentAstro.',
+    },
+    {
+      name: 'Dr. Om Singh',
+      image: '/Advisor/om.jpg',
+      bio: 'Dr. Om Singh is a Microbiology and Molecular Biology educator who mentors research on isolating extremophiles for valuable bioproduct discovery.',
     }
   ];
 
@@ -582,7 +587,7 @@ Plans are available on a monthly or annual basis.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {advisors.map((advisor, index) => (
               <div
                 key={index}
