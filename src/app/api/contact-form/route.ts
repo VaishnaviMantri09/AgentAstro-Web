@@ -51,7 +51,7 @@ export async function POST(req: Request) {
                     <p style="margin: 0 0 10px 0;"><strong>Name:</strong> ${escapeHtml(name)}</p>
                     <p style="margin: 0 0 10px 0;"><strong>Email:</strong> ${escapeHtml(email)}</p>
                     <p style="margin: 0 0 10px 0;"><strong>Subject:</strong> ${escapeHtml(subject)}</p>
-                    <$ style="margin: 0 0 10px 0;"><strong>Message:</strong>${escapeHtml(message)}</p>
+                    <p style="margin: 0 0 10px 0;"><strong>Message:</strong>${escapeHtml(message)}</p>
                     <p style="margin-top: 20px;">Best regards,<br/>Your Website Contact Form</p>
                 </div>
                 
@@ -73,3 +73,4 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
     }
 }
+
