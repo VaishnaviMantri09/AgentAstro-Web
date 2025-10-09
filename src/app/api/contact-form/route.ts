@@ -29,10 +29,10 @@ export async function POST(req: Request) {
         });
 
         const mailOptions = {
-            from: `"Website Contact" <${process.env.EMAIL_USER}>`,
+            from: `<${process.env.EMAIL_USER}>`,
             to: process.env.TO_EMAIL ?? process.env.EMAIL_USER,
             replyTo: email,
-            subject: `[Website Contact] ${subject}`,
+            subject: `A New User has Contacted You on your Website`,
             headers: {
                 "X-Mailer": "Website Contact Form",
                 "X-Priority": "3",
@@ -51,11 +51,7 @@ export async function POST(req: Request) {
                     <p style="margin: 0 0 10px 0;"><strong>Name:</strong> ${escapeHtml(name)}</p>
                     <p style="margin: 0 0 10px 0;"><strong>Email:</strong> ${escapeHtml(email)}</p>
                     <p style="margin: 0 0 10px 0;"><strong>Subject:</strong> ${escapeHtml(subject)}</p>
-                    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
-                    <p style="margin-bottom: 8px;"><strong>Message:</strong></p>
-                    <p style="white-space: pre-line; line-height: 1.6; margin-top: 0;">
-                    ${escapeHtml(message)}
-                    </p>
+                    <$ style="margin: 0 0 10px 0;"><strong>Message:</strong>${escapeHtml(message)}</p>
                     <p style="margin-top: 20px;">Best regards,<br/>Your Website Contact Form</p>
                 </div>
                 
