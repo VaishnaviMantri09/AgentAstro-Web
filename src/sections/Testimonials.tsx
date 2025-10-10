@@ -1,56 +1,33 @@
 "use client";
 import React from "react";
 
-const avatars = [
-  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-  "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnN8ZW58MHx8MHx8fDA%3D",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
-];
 
 type Testimonial = {
   text: string;
-  imageSrc: string;
   name: string;
 };
 
 const testimonials: Testimonial[] = [
   {
     text: "AgentAstro represents the next evolution of regulatory affairs: Combining AI powered industry expertise for faster approvals.",
-    imageSrc: avatars[0],
     name: "Jay Litkey",
   },
   {
     text: "AgentAstro’s insights empower teams to navigate submissions with confidence, saving time and resources across operations.",
-    imageSrc: avatars[1],
     name: "Lanna Millien",
   },
   {
-    text: "As a subscriber,AgentAstro is a promising tool that speeds up and improves confidence in regulatory submissions.",
-    imageSrc: avatars[2],
-    name: "Navin Dewagan",
-  },
-  {
     text: "AgentAstro gave us valuable insights into the FDA 510(k) process and regulatory requirements.",
-    imageSrc: avatars[3],
     name: "Chattar Rathore",
   },
   {
-    text: "We’ve reduced unnecessary costs since adopting AgentAstro—the platform’s ability to identify optimal solutions.",
-    imageSrc: avatars[4],
-    name: "Taylor Kim",
-  },
-  {
-    text: "The customizability and integration capabilities of this app are top-notch.",
-    imageSrc: avatars[5],
-    name: "Riley Smith",
+    text: "As a subscriber,AgentAstro is a promising tool that speeds up and improves confidence in regulatory submissions.",
+    name: "Navin Dewagan",
   },
 ];
 
-const firstRow = testimonials.slice(0, 3);
-const secondRow = testimonials.slice(3, 6);
+const firstRow = testimonials.slice(0, 2);
+const secondRow = testimonials.slice(2, 4);
 
 export default function Testimonials() {
   return (
@@ -65,11 +42,6 @@ export default function Testimonials() {
               {[...firstRow, ...firstRow].map((testimonial, idx) => (
                 <div className="testimonial-card" key={`row1-${idx}`}>
                   <div className="user-info">
-                    <img
-                      src={testimonial.imageSrc}
-                      alt={testimonial.name}
-                      className="user-avatar"
-                    />
                     <div className="user-details font-gesta">
                       <div className="user-name font-gesta">{testimonial.name}</div>
                     </div>
@@ -85,11 +57,6 @@ export default function Testimonials() {
               {[...secondRow, ...secondRow].map((testimonial, idx) => (
                 <div className="testimonial-card" key={`row2-${idx}`}>
                   <div className="user-info">
-                    <img
-                      src={testimonial.imageSrc}
-                      alt={testimonial.name}
-                      className="user-avatar"
-                    />
                     <div className="user-details">
                       <div className="user-name font-gesta">{testimonial.name}</div>
                     </div>
@@ -113,7 +80,7 @@ export default function Testimonials() {
         }
 
         .testimonials-section {
-          max-width: 1200px;
+          max-width: 900px;
           margin: 0 auto;
           padding: 0 20px 60px 20px;
           position: relative;
@@ -177,19 +144,19 @@ export default function Testimonials() {
         }
 
         @keyframes scrollLeft {
-          0% {
+          from {
             transform: translateX(0);
           }
-          100% {
-            transform: translateX(-50%);
+          to {
+            transform: translateX(calc(-50% - 10px));
           }
         }
 
         @keyframes scrollRight {
-          0% {
-            transform: translateX(-50%);
+          from {
+            transform: translateX(calc(-50% - 10px));
           }
-          100% {
+          to {
             transform: translateX(0);
           }
         }
@@ -218,16 +185,7 @@ export default function Testimonials() {
         .user-info {
           display: flex;
           align-items: center;
-          margin-bottom: 12px;
-        }
-
-        .user-avatar {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          object-fit: cover;
-          margin-right: 12px;
-          border: 2px solid #f1f5f9;
+          margin-bottom: 5px;
         }
 
         .user-details {
@@ -239,7 +197,7 @@ export default function Testimonials() {
           font-weight: 600;
           font-size: 16px;
           color: #1e293b;
-          margin-bottom: 2px;
+          margin-bottom: 1px;
         }
 
         .user-handle {
@@ -249,7 +207,7 @@ export default function Testimonials() {
         }
 
         .testimonial-text {
-          font-size: 15px;
+          font-size: 16px;
           line-height: 1.5;
           color: #475569;
           font-weight: 400;
@@ -357,11 +315,6 @@ export default function Testimonials() {
             min-height: 120px;
           }
 
-          .user-avatar {
-            width: 36px;
-            height: 36px;
-            margin-right: 10px;
-          }
 
           .user-name {
             font-size: 15px; 
@@ -480,12 +433,6 @@ export default function Testimonials() {
 
           .user-info {
             margin-bottom: 6px;
-          }
-
-          .user-avatar {
-            width: 28px;
-            height: 28px;
-            margin-right: 6px;
           }
 
           .user-name {
