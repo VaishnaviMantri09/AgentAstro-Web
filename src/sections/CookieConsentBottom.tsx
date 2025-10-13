@@ -25,11 +25,6 @@ export default function CookieConsentBottom() {
     }, []);
 
     useEffect(() => {
-        const link = document.createElement("link");
-        link.href = "https://db.onlinewebfonts.com/c/dbb1ae7135db652884e5f41bfe2dae37?family=Gesta+W01+Regular";
-        link.rel = "stylesheet";
-        document.head.appendChild(link);
-
         const consent = localStorage?.getItem?.("cookieConsent");
         const pref = localStorage?.getItem?.("cookiePreferences");
         if (!consent) {
@@ -38,14 +33,9 @@ export default function CookieConsentBottom() {
         } else {
             setShow(false);
             document.body.style.overflow = "";
-            if (consent === "accept") {
-                enableAllCookies();
-            } else if (consent === "decline") {
-                disableNonEssentialCookies();
-            } else if (consent === "preferences" && pref) {
+            if (consent === "preferences" && pref) {
                 const preferences = JSON.parse(pref);
                 setCookiePreference(preferences);
-                applyPreferences(preferences);
             }
         }
         return () => {
@@ -58,10 +48,10 @@ export default function CookieConsentBottom() {
             localStorage.setItem("cookieConsent", value);
         }
         if (value === "accept") {
-            enableAllCookies();
+            setCookiePreference({ analytics: true, marketing: true });
             setShow(false);
         } else if (value === "decline") {
-            disableNonEssentialCookies();
+            setCookiePreference({ analytics: false, marketing: false });
             setShow(false);
         } else if (value === "preferences") {
             setPreferencesOpen(true);
@@ -72,216 +62,11 @@ export default function CookieConsentBottom() {
         document.body.style.overflow = "";
     };
 
-    const getModalMaxHeight = () => {
-        return "none";
-    };
-
-    const enableAllCookies = () => {
-        loadGoogleAnalytics();
-        loadGoogleTagManager();
-        updateGoogleConsent(true, true);
-        console.log("All cookies enabled");
-    };
-
-    const disableNonEssentialCookies = () => {
-        clearAnalyticsCookies();
-        clearMarketingCookies();
-        updateGoogleConsent(false, false);
-        disableTrackingScripts();
-        console.log("Non-essential cookies disabled");
-    };
-
-    const applyPreferences = (preferences: CookiePreference) => {
-        if (preferences.analytics) {
-            loadGoogleAnalytics();
-            console.log("Analytics cookies enabled");
-        } else {
-            clearAnalyticsCookies();
-            disableAnalyticsScripts();
-            console.log("Analytics cookies disabled");
-        }
-
-        if (preferences.marketing) {
-            loadGoogleTagManager();
-            console.log("Marketing cookies enabled");
-        } else {
-            clearMarketingCookies();
-            disableMarketingScripts();
-            console.log("Marketing cookies disabled");
-        }
-
-        updateGoogleConsent(preferences.analytics, preferences.marketing);
-    };
-
-    const loadGoogleAnalytics = () => {
-        const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-        if (!GA_ID) {
-            console.warn("GA ID is missing");
-            return;
-        }
-        if (document.querySelector(`script[src*="${GA_ID}"]`)) {
-            return;
-        }
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-        script.onload = () => {
-            (window as any).dataLayer = (window as any).dataLayer || [];
-            function gtag(...args: any[]) {
-                (window as any).dataLayer.push(args);
-            }
-            (window as any).gtag = gtag;
-
-            gtag("js", new Date());
-            gtag("config", GA_ID, {
-                anonymize_ip: true,
-                cookie_flags: "secure;samesite=lax",
-                send_page_view: true,
-            });
-
-            console.log("Google Analytics loaded");
-        };
-        document.head.appendChild(script);
-    };
-
-    const loadGoogleTagManager = () => {
-        const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
-        if (!GTM_ID) {
-            console.warn("GTM ID is missing");
-            return;
-        }
-        if (document.querySelector(`script[src*="${GTM_ID}"]`)) {
-            return;
-        }
-        (window as any).dataLayer = (window as any).dataLayer || [];
-        (window as any).dataLayer.push({
-            "gtm.start": new Date().getTime(),
-            event: "gtm.js",
-        });
-        const script = document.createElement("script");
-        script.async = true;
-        script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
-        document.head.appendChild(script);
-
-        console.log("Google Tag Manager loaded");
-    };
-
-    const updateGoogleConsent = (analytics: boolean, marketing: boolean) => {
-        if ((window as any).gtag) {
-            (window as any).gtag("consent", "update", {
-                analytics_storage: analytics ? "granted" : "denied",
-                ad_storage: marketing ? "granted" : "denied",
-                ad_user_data: marketing ? "granted" : "denied",
-                ad_personalization: marketing ? "granted" : "denied",
-            });
-            console.log("Google consent updated:", { analytics, marketing });
-        } else {
-            console.warn("gtag not available for consent update");
-        }
-    };
-
-    const clearAnalyticsCookies = () => {
-        const analyticsCookies = [
-            "_ga",
-            "_ga_",
-            "_gid",
-            "_gat",
-            "_gtag_",
-            "_gcl_au",
-            "__utma",
-            "__utmb",
-            "__utmc",
-            "__utmt",
-            "__utmz",
-            "__utmv",
-        ];
-
-        analyticsCookies.forEach((cookieName) => {
-            deleteCookie(cookieName);
-            deleteCookie(cookieName, window.location.hostname);
-            deleteCookie(cookieName, "." + window.location.hostname);
-        });
-
-        try {
-            Object.keys(localStorage).forEach((key) => {
-                if (key.startsWith("_ga") || key.includes("analytics")) {
-                    localStorage.removeItem(key);
-                }
-            });
-
-            Object.keys(sessionStorage).forEach((key) => {
-                if (key.startsWith("_ga") || key.includes("analytics")) {
-                    sessionStorage.removeItem(key);
-                }
-            });
-        } catch (e) {
-            console.warn("Could not access browser storage:", e);
-        }
-    };
-
-    const clearMarketingCookies = () => {
-        const marketingCookies = [
-            "_gcl_aw",
-            "_gcl_dc",
-            "_gcl_gb",
-            "_gcl_gf",
-            "_gcl_ha",
-            "IDE",
-            "test_cookie",
-            "_gads",
-            "_gac_",
-            "DSID",
-        ];
-
-        marketingCookies.forEach((cookieName) => {
-            deleteCookie(cookieName);
-            deleteCookie(cookieName, window.location.hostname);
-            deleteCookie(cookieName, "." + window.location.hostname);
-        });
-    };
-
-    const deleteCookie = (name: string, domain?: string) => {
-        const expires = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        const path = "path=/";
-        const domainAttr = domain ? `domain=${domain}` : "";
-
-        document.cookie = `${name}=; ${expires}; ${path}; ${domainAttr}`;
-        document.cookie = `${name}=; ${expires}; ${path}; ${domainAttr}; secure`;
-        document.cookie = `${name}=; ${expires}; ${path}; ${domainAttr}; samesite=lax`;
-        document.cookie = `${name}=; ${expires}; ${path}; ${domainAttr}; secure; samesite=lax`;
-    };
-
-    const disableAnalyticsScripts = () => {
-        const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-        if (GA_ID) {
-            (window as any)[`ga-disable-${GA_ID}`] = true;
-        }
-        if ((window as any).dataLayer) {
-            (window as any).dataLayer = [];
-        }
-        console.log("Analytics scripts disabled");
-    };
-
-    const disableMarketingScripts = () => {
-        if ((window as any).google_tag_manager) {
-            (window as any).google_tag_manager = {};
-        }
-        console.log("Marketing scripts disabled");
-    };
-
-    const disableTrackingScripts = () => {
-        disableAnalyticsScripts();
-        disableMarketingScripts();
-        (window as any).doNotTrack = "1";
-        console.log("All tracking disabled");
-    };
-
     const savePreferences = () => {
         if (typeof localStorage !== "undefined") {
             localStorage.setItem("cookieConsent", "preferences");
             localStorage.setItem("cookiePreferences", JSON.stringify(cookiePreference));
         }
-        applyPreferences(cookiePreference);
         setPreferencesOpen(false);
         setShow(false);
         document.body.style.overflow = "";
@@ -309,7 +94,6 @@ export default function CookieConsentBottom() {
             fontSize: windowWidth > 600 ? "16px" : "14px",
             width: "99vw",
             boxSizing: "border-box" as "border-box",
-            maxHeight: getModalMaxHeight(),
             left: "50%",
             transform: "translateX(-50%)",
         },
@@ -562,8 +346,8 @@ export default function CookieConsentBottom() {
                                 </div>
                                 <p style={styles.categoryDescription}>
                                     These cookies help us understand how visitors interact with our website by
-                                    collecting and reporting information anonymously using Google Analytics. This helps
-                                    us improve our website's performance.
+                                    collecting and reporting information anonymously. This helps us improve our
+                                    website's performance.
                                 </p>
                                 <ToggleSwitch
                                     checked={cookiePreference.analytics}
