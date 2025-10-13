@@ -222,7 +222,7 @@ export default function StartedPage() {
                                                 }`}
                                         />
                                         {errors.name && (
-                                            <p className="mt-1 text-sm text-red-400 flex items-center">
+                                            <p className="mt-1 font-gesta text-lg text-red-900 flex items-center">
                                                 <AlertCircle className="w-4 h-4 mr-1" />
                                                 {errors.name}
                                             </p>
@@ -246,7 +246,7 @@ export default function StartedPage() {
                                                 }`}
                                         />
                                         {errors.email && (
-                                            <p className="mt-1 text-sm text-red-400 flex items-center">
+                                            <p className="font-gesta mt-1 text-lg text-red-900 flex items-center">
                                                 <AlertCircle className="w-4 h-4 mr-1" />
                                                 {errors.email}
                                             </p>
@@ -271,7 +271,7 @@ export default function StartedPage() {
                                             }`}
                                     />
                                     {errors.subject && (
-                                        <p className="mt-1 text-sm text-red-400 flex items-center">
+                                        <p className="mt-1 font-gesta text-lg text-red-900 flex items-center">
                                             <AlertCircle className="w-4 h-4 mr-1" />
                                             {errors.subject}
                                         </p>
@@ -295,7 +295,7 @@ export default function StartedPage() {
                                             }`}
                                     />
                                     {errors.message && (
-                                        <p className="mt-1 text-sm text-red-400 flex items-center">
+                                        <p className="mt-1 font-gesta text-lg text-red-900 flex items-center">
                                             <AlertCircle className="w-4 h-4 mr-1" />
                                             {errors.message}
                                         </p>
@@ -303,14 +303,14 @@ export default function StartedPage() {
                                 </div>
 
                                 {submitStatus === 'success' && (
-                                    <div className="font-gesta bg-green-500/20 border border-green-400 rounded-lg p-4 flex items-center text-green-300">
+                                    <div className="font-gesta bg-green-500/20 border border-green-400 rounded-lg p-4 flex items-center text-black">
                                         <CheckCircle className="w-5 h-5 mr-2" />
                                         Message sent successfully! We'll get back to you soon.
                                     </div>
                                 )}
 
                                 {submitStatus === 'error' && (
-                                    <div className="font-gesta bg-red-500/20 border border-red-400 rounded-lg p-4 flex items-center text-red-300">
+                                    <div className="font-gesta bg-red-500/20 border border-red-400 rounded-lg p-4 flex items-center text-black">
                                         <AlertCircle className="w-5 h-5 mr-2" />
                                         Something went wrong. Please try again.
                                     </div>
@@ -319,7 +319,7 @@ export default function StartedPage() {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold py-4 px-6 rounded-lg  focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-transparent transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                                    className="w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                                 >
                                     {isSubmitting ? (
                                         <>
