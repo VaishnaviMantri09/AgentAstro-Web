@@ -66,13 +66,13 @@ export default function PricingPage() {
             ]
         },
         {
-            name: 'Enterprise Plan',
+            name: 'Pro Plan',
             users: 'Up to 5+ Users',
             monthlyPrice: 599,
             yearlyPrice: 499,
             yearlyTotal: 5999,
-            monthlyPriceId: process.env.NEXT_PUBLIC_ENTERPRISE_MONTHLY_PRICE_ID!,
-            yearlyPriceId: process.env.NEXT_PUBLIC_ENTERPRISE_YEARLY_PRICE_ID!,
+            monthlyPriceId: process.env.NEXT_PUBLIC_PRO_MONTHLY_PRICE_ID!,
+            yearlyPriceId: process.env.NEXT_PUBLIC_PRO_YEARLY_PRICE_ID!,
             features: [
                 { icon: FaSearch, text: 'Advanced predicate search.', highlight: false },
                 { icon: BiDevices, text: 'Device comparison.', highlight: false },
@@ -429,4 +429,5 @@ export default function PricingPage() {
             <Footer />
         </div >
     );
+
 }
