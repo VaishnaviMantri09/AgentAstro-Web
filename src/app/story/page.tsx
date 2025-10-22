@@ -272,7 +272,7 @@ Plans are available on a monthly or annual basis.
     {
       name: 'Danny Minogue',
       image: '/Advisor/danny.png',
-      bio: 'Danny Minogue is pioneering leader in advanced surgical technologies and healthcare innovation with over 40 years of transformative impact in Canada.',
+      bio: 'Danny Minogue is a pioneering leader in advanced surgical technologies and healthcare innovation with over 40 years of transformative impact in Canada.',
     },
     {
       name: 'Jay Litkey',
@@ -282,7 +282,7 @@ Plans are available on a monthly or annual basis.
     {
       name: 'Dr. Om Singh',
       image: '/Advisor/om.jpg',
-      bio: 'Dr. Om Singh is a Microbiology and Molecular Biology educator who mentors research on isolating extremophiles for valuable bioproduct discovery.',
+      bio: 'Dr. Singh, a former FDA Lead Reviewer, assessed 510(k), PMA, and IND submissions, ensuring medical device safety, efficacy, sterilization, reprocessing compliance, and adherence to regulatory standards.',
     }
   ];
 
@@ -337,7 +337,7 @@ Plans are available on a monthly or annual basis.
               Our Story
             </h2>
             <p className="font-gesta text-xl lg:text-xl font-bold mb-8  bg-gradient-to-r from-white via-blue-100 to-indigo-200 bg-clip-text text-white/90 leading-tight animate-pulseText hover-lift">
-              AgentAstro was founded to solve the bottlenecks in FDA 510(k) approvals. By combining AI with deep regulatory insight, we’re making submissions faster, more precise, and more strategic.
+              Agent Astro was founded to transform how MedTech innovation moves from concept to approval. By combining AI with regulatory intelligence, we empower teams to make faster, smarter, and more confident decisions.
             </p>
             <div className="flex justify-center animate-scaleIn stagger-4" >
               <Link href="/started">
