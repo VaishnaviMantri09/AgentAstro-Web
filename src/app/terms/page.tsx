@@ -16,7 +16,7 @@ const TermsOfService = () => {
             content: (
                 <div className="space-y-6">
                     <p className="font-gesta text-gray-900 leading-relaxed text-xl">
-                        AgentAstrois a software platform developed by AgentAstroInc. that aggregates, organizes, and presents publicly available regulatory data from sources such as the U.S. Food and Drug Administration (FDA).
+                        AgentAstro is a software platform developed by AgentAstro Inc. that aggregates, organizes, and presents publicly available regulatory data from sources such as the U.S. Food and Drug Administration (FDA).
                     </p>
                     <p className="font-gesta text-gray-900 leading-relaxed text-xl">
                         The Services use AI-enabled systems to process, analyze, and surface information that may assist users in identifying regulatory pathways, predicate devices, and submission precedents. While we strive for accuracy, the nature of machine learning and regulatory data integration means outputs may contain errors, inaccuracies, omissions, or outdated content.
@@ -31,7 +31,7 @@ const TermsOfService = () => {
                                     {[
                                         'The Services are provided for general informational purposes only.',
                                         'Outputs are not legal, regulatory, or compliance advice.',
-                                        'AgentAstrooutputs must not be filed directly with regulators without independent professional validation.',
+                                        'AgentAstro outputs must not be filed directly with regulators without independent professional validation.',
                                         'Users remain solely responsible for ensuring compliance with all applicable regulatory requirements.',
 
                                     ].map((item, idx) => (
@@ -52,7 +52,7 @@ const TermsOfService = () => {
                         <ul className="space-y-3">
                             {[
                                 'The Services may generate incomplete or imprecise results.',
-                                'AgentAstromakes no warranty as to correctness, completeness, or regulatory sufficiency of outputs.',
+                                'AgentAstro makes no warranty as to correctness, completeness, or regulatory sufficiency of outputs.',
                                 'All regulatory submissions and decisions remain your responsibility.',
 
                             ].map((item, idx) => (
@@ -163,10 +163,10 @@ const TermsOfService = () => {
             content: (
                 <div className="space-y-4">
                     <p className="text-xl font-gesta text-gray-900 leading-relaxed">
-                        All software, code, and original content within the Services are the property of AgentAstroor its licensors. We grant you a limited, non-exclusive, non-transferable license to use the Services for your internal business purposes while your subscription is active.
+                        All software, code, and original content within the Services are the property of AgentAstro or its licensors. We grant you a limited, non-exclusive, non-transferable license to use the Services for your internal business purposes while your subscription is active.
                     </p>
                     <p className="text-xl font-gesta text-gray-900 leading-relaxed">
-                        You retain ownership of all User Content you upload to the Services. By uploading User Content, you grant AgentAstroa limited license to process and display such content solely for the purpose of providing the Services. You represent that you have the rights and authorizations to upload any content you provide.
+                        You retain ownership of all User Content you upload to the Services. By uploading User Content, you grant AgentAstro a limited license to process and display such content solely for the purpose of providing the Services. You represent that you have the rights and authorizations to upload any content you provide.
                     </p>
 
                     <div className="border border-[#061A40] rounded-xl p-3">
@@ -237,14 +237,14 @@ const TermsOfService = () => {
                         <div className="flex items-start space-x-4">
                             <div>
                                 <p className="text-gray-900 font-gesta text-xl">
-                                    To the maximum extent permitted by law, AgentAstrois not liable for any indirect, incidental, special, consequential, or punitive damages (including lost profits, lost opportunities, or business interruption).
+                                    To the maximum extent permitted by law, AgentAstro is not liable for any indirect, incidental, special, consequential, or punitive damages (including lost profits, lost opportunities, or business interruption).
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     <div className="bg-white rounded-xl p-4 border hover:border-[#061A40] shadow-sm">
-                        <h4 className="font-semibold font-gesta text-xl text-gray-900 mb-4">In particular, AgentAstroshall not be liable for:</h4>
+                        <h4 className="font-semibold font-gesta text-xl text-gray-900 mb-4">In particular, AgentAstro shall not be liable for:</h4>
                         <div className="grid gap-3">
                             {[
                                 'Regulatory delays, denials, or enforcement actions based on reliance on the Services.',
@@ -262,7 +262,7 @@ const TermsOfService = () => {
                         <div className="flex items-center space-x-3">
                             <div>
                                 <p className="text-gray-900 text-xl font-gesta">
-                                    Our total liability for any claim related to the Services is limited to the greater of (a) USD $100 or (b) the fees you paid to AgentAstroin the twelve (12) months prior to the event giving rise to the claim.
+                                    Our total liability for any claim related to the Services is limited to the greater of (a) USD $100 or (b) the fees you paid to AgentAstro in the twelve (12) months prior to the event giving rise to the claim.
                                 </p>
                             </div>
                         </div>
@@ -323,7 +323,7 @@ const TermsOfService = () => {
                         <div className="flex items-center justify-center space-x-4 text-xl text-black font-gesta font-bold">
                             <span>Effective: May 2025</span>
                             <span>•</span>
-                            <span>Updated: August 2025</span>
+                            <span>Updated: October 2025</span>
                         </div>
                     </div>
                 </div>
@@ -355,7 +355,7 @@ const TermsOfService = () => {
                         <div className="relative">
                             <h3 className="font-gesta text-xl font-bold text-black mb-3">If you have questions about this Privacy Policy or your personal information, please contact:</h3>
                             <p className="font-gesta text-xl text-gray-900 mb-6 max-w-2xl mx-auto">
-                                AgentAstroInc.<br />
+                                AgentAstro Inc.<br />
                                 Head Office: Ottawa, Ontario, Canada<br />
                                 U.S. Office: 265 Franklin Street, Suite 1702, Boston, MA 02110, United States<br />
                             </p>
