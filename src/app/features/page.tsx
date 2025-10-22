@@ -12,7 +12,7 @@ const FeaturesPage = () => {
         {
             id: 'predicate-search',
             title: 'Advanced Predicate Search',
-            description: "Search the FDA’s 510(k) database using intuitive, natural language prompts no complex filters or keyword guesswork.",
+            description: "Search FDA databases using intuitive, natural language prompts no complex filters or keyword guesswork. ",
             benefit: 'Find the most relevant predicates in seconds, not hours.',
             imageUrl: '/Features/predicate-search.jpg',
             imageAlt: 'Advanced Predicate Search',
@@ -20,7 +20,7 @@ const FeaturesPage = () => {
         {
             id: 'regulatory-reporting',
             title: 'Detailed Regulatory Reporting',
-            description: 'Generate expert level reports that compile and contextualise FDA data to support your substantial equivalence narrative.',
+            description: 'Generate expert level reports that compile and Contextualize FDA data to support your substantial equivalence narrative.',
             benefit: 'Strengthen your submission with clear documentation.',
             imageUrl: '/Features/regulatory-reporting.jpg',
             imageAlt: 'Detailed Regulatory Reporting',
