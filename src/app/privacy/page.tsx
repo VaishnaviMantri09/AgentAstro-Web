@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
             content: (
                 <div className="space-y-6">
                     <p className="font-gesta text-gray-900 leading-relaxed text-xl">
-                        AgentAstroInc. is a Canadian company that provides regulatory intelligence tools for medical device companies and professionals. Our software aggregates publicly available data to help users better understand regulatory pathways.
+                        AgentAstro Inc. is a Canadian company that provides regulatory intelligence tools for medical device companies and professionals. Our software aggregates publicly available data to help users better understand regulatory pathways.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-4">
@@ -202,7 +202,7 @@ const PrivacyPolicy = () => {
                     <div className="rounded-xl p-6 border hover:border-[#061A40]">
                         <h4 className="font-gesta text-xl font-bold text-gray-900 mb-2">User Content:</h4>
                         <p className="text-gray-900 text-xl font-gesta">
-                            Any documents, data, or content you upload remain your property. You grant AgentAstroa limited license to process such content solely for providing the Services.
+                            Any documents, data, or content you upload remain your property. You grant AgentAstro a limited license to process such content solely for providing the Services.
                         </p>
                     </div>
 
@@ -351,7 +351,7 @@ const PrivacyPolicy = () => {
                             Privacy Policy
                         </h2>
                         <p className="font-gesta text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-2">
-                            AgentAstroInc. (“Agent Astro,” “we,” “our,” or “us”) respects your privacy and is committed to protecting your personal information.
+                            AgentAstro Inc. (“Agent Astro,” “we,” “our,” or “us”) respects your privacy and is committed to protecting your personal information.
                             This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our website, application,
                             and services (collectively, the “Services”).
                         </p>
@@ -390,7 +390,7 @@ const PrivacyPolicy = () => {
                         <div className="relative">
                             <h3 className="font-gesta text-xl font-bold text-black mb-3">If you have questions about this Privacy Policy or your personal information, please contact:</h3>
                             <p className="font-gesta text-xl text-gray-900 mb-6 max-w-2xl mx-auto">
-                                AgentAstroInc.<br />
+                                AgentAstro Inc.<br />
                                 Head Office: Ottawa, Ontario, Canada<br />
                                 U.S. Office: 265 Franklin Street, Suite 1702, Boston, MA 02110, United States<br />
                             </p>
