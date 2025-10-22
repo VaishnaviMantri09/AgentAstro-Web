@@ -396,7 +396,7 @@ export default function PricingPage() {
                                 {
                                     icon: <GrPlan />,
                                     title: "Evaluation Strategy",
-                                    description: "Customised problem solving to ensure you meet regulatory standards.",
+                                    description: "Customized problem solving to ensure you meet regulatory standards.",
                                     gradient: "bg-[#007EA6]",
                                     delay: "stagger-2"
                                 },
