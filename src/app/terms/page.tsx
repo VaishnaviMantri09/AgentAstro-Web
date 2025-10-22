@@ -212,7 +212,7 @@ const TermsOfService = () => {
                     </div>
 
                     <div className="bg-white rounded-xl p-4 border hover:border-[#061A40] shadow-sm">
-                        <h4 className="font-semibold text-gray-900 mb-4 font-gesta text-xl">AgentAstrodoes not warrant that:</h4>
+                        <h4 className="font-semibold text-gray-900 mb-4 font-gesta text-xl">AgentAstro does not warrant that:</h4>
                         <div className="grid md:grid-cols-2 gap-4">
                             {[
                                 '1. The Services will be uninterrupted, secure, or error-free.',
@@ -316,7 +316,7 @@ const TermsOfService = () => {
                             Terms of Service
                         </h1>
                         <p className="font-gesta text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-4">
-                            Welcome to Agent Astro. These Terms of Service (“Terms”) govern your use of our website, application, and services (collectively, the “Services”), provided by AgentAstroInc., a Canadian corporation with a U.S. office located in Boston, Massachusetts (“Agent Astro,” “we,” “us,” or “our”). By using our Services, you agree to be bound by these Terms.
+                            Welcome to Agent Astro. These Terms of Service (“Terms”) govern your use of our website, application, and services (collectively, the “Services”), provided by AgentAstro Inc., a Canadian corporation with a U.S. office located in Boston, Massachusetts (“Agent Astro,” “we,” “us,” or “our”). By using our Services, you agree to be bound by these Terms.
                         </p>
                         <p className="font-gesta text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mb-4">If you do not agree to these Terms, you may not use the Services.
                         </p>
