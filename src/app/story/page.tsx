@@ -279,11 +279,11 @@ Plans are available on a monthly or annual basis.
       image: '/Advisor/jay.png',
       bio: 'Jay Litkey, a serial SaaS entrepreneur with over 25 years of experience who founded Embotics, currently serves as SVP at Flexera and advisor to AgentAstro.',
     },
-    {
-      name: 'Dr. Om Singh',
-      image: '/Advisor/om.jpg',
-      bio: 'Dr. Singh, a former FDA Lead Reviewer, assessed 510(k), PMA, and IND submissions, ensuring medical device safety, efficacy, sterilization, reprocessing compliance, and adherence to regulatory standards.',
-    }
+    // {
+    //   name: 'Dr. Om Singh',
+    //   image: '/Advisor/om.jpg',
+    //   bio: 'Dr. Singh, a former FDA Lead Reviewer, assessed 510(k), PMA, and IND submissions, ensuring medical device safety, efficacy, sterilization, reprocessing compliance, and adherence to regulatory standards.',
+    // }
   ];
 
   const timelineItems = [
@@ -1048,3 +1048,4 @@ Plans are available on a monthly or annual basis.
 };
 
 export default StoryPage;
+
