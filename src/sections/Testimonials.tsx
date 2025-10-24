@@ -9,32 +9,32 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    text: "As a subscriber, AgentAstro is a promising tool that speeds up and improves confidence in regulatory submissions.",
+    text: "As a subscriber, Agent Astro is a promising tool that speeds up and improves confidence in regulatory submissions.",
     name: "Navin Dewagan",
     designation: "CEO, Digital HealthCare Solutions",
   },
   {
-    text: "AgentAstro represents the next evolution of regulatory affairs: Combining AI powered industry expertise for faster approvals.",
+    text: "Agent Astro represents the next evolution of regulatory affairs: Combining AI powered industry expertise for faster approvals.",
     name: "Jay Litkey",
     designation: "SVP, Flexera",
   },
   {
-    text: "AgentAstro shows how AI can move regulatory affairs upstream, it help in shaping design choices, materials, and supply chain decisions from day one.",
+    text: "Agent Astro shows how AI can move regulatory affairs upstream, it help in shaping design choices, materials, and supply chain decisions from day one.",
     name: "Danny Minogue",
     designation: "CEO, Minogue Medical",
   },
   {
-    text: "What AgentAstro is building is exactly what the medtech industry needs. This platform has potential to streamline regulatory process and lower barriers to innovation.",
+    text: "What Agent Astro is building is exactly what the medtech industry needs. This platform has potential to streamline regulatory process and lower barriers to innovation.",
     name: "Frank Baylis",
     designation: "Executive Chairman, Baylis Medical",
   },
   {
-    text: "AgentAstro's insights empower teams to navigate submissions with confidence, saving time and resources across operations.",
+    text: "Agent Astro's insights empower teams to navigate submissions with confidence, saving time and resources across operations.",
     name: "Lanna Millien",
     designation: "Healthcare Executive",
   },
   {
-    text: "AgentAstro gave us valuable insights into the FDA 510(k) process and regulatory requirements.",
+    text: "Agent Astro gave us valuable insights into the FDA 510(k) process and regulatory requirements.",
     name: "Chattar Rathore",
     designation: "Regulatory & Compliance Director at Nûby",
   },
