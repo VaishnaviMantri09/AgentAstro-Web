@@ -111,10 +111,10 @@ const WhosAgentastro = () => (
             <div className="relative p-4 md:p-6 lg:p-8 xl:p-10">
               <div className="text-center mb-6 md:mb-8">
                 <h4 className="font-gesta text-3xl md:text-4xl font-extrabold mb-4  bg-clip-text text-black animate-fade-in">
-                  Meet AgentAstro
+                  Meet Agent Astro
                 </h4>
                 <p className="font-gesta mt-4 text-gray-600 font-semibold text-base text-xl md:text-xl">
-                  AgentAstro helps regulatory professionals cut months of work into hours by combining FDA data with AI-powered intelligence.
+                  Agent Astro helps regulatory professionals cut months of work into hours by combining FDA data with AI-powered intelligence.
                 </p>
               </div>
               <ul className="space-y-3 md:space-y-4">
