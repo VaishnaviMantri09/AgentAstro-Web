@@ -72,7 +72,7 @@ export default function Footer(): JSX.Element {
                 <Link href="/">
                   <Image
                     src="/logo.png"
-                    alt="AgentAstro AI"
+                    alt="Agent Astro AI"
                     height={40}
                     width={40}
                     className="text-white border-2 border-gray-400 shadow-md p-1 rounded-lg"
@@ -80,7 +80,7 @@ export default function Footer(): JSX.Element {
                 </Link>
                 <div className="flex flex-col">
                   <h2 className="font-gesta text-2xl font-bold text-white tracking-tight">
-                    AgentAstro
+                    Agent Astro
                   </h2>
                   <p className="font-gesta text-[#EBEEF2] text-base font-medium">
                     Faster, Smarter, FDA Submissions
@@ -183,7 +183,7 @@ export default function Footer(): JSX.Element {
           <div className="border-t border-blue-800 pt-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
               <div className="font-gesta text-[#EBEEF2] text-xl">
-                © {new Date().getFullYear()} AgentAstro, All rights reserved.
+                © {new Date().getFullYear()} Agent Astro, All rights reserved.
               </div>
               <div className="flex items-center space-x-4">
                 <span className="text-[#EBEEF2] text-xl mr-2 font-gesta">Follow Us</span>
