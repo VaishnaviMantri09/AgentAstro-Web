@@ -19,7 +19,7 @@ export async function POST(req: Request) {
             },
         });
         await transporter.sendMail({
-            from: `AgentAstro Newsletter`,
+            from: `Agent Astro Newsletter`,
             to: process.env.TO_EMAIL,
             subject: "A New Newsletter Subscription",
             text: `New subscriber: ${email}`,
@@ -46,3 +46,4 @@ export async function POST(req: Request) {
         return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
     }
 }
+
