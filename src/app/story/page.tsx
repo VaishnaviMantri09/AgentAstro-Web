@@ -108,40 +108,40 @@ const StoryPage = () => {
   const faqData = [
     // PRODUCT OVERVIEW SECTION
     {
-      question: 'What is AgentAstro?',
-      answer: `AgentAstro is an ** AI - powered regulatory intelligence platform ** purpose - built for the MedTech industry.It accelerates the FDA 510(k) process while also supporting ** upstream activities ** such as materials selection, design considerations, and early product strategy.
-      By combining FDA data with a wide range of ** trusted industry and scientific sources **, AgentAstro provides a complete view of regulatory precedent, design implications, and market context.
+      question: 'What is Agent Astro?',
+      answer: `Agent Astro is an ** AI - powered regulatory intelligence platform ** purpose - built for the MedTech industry.It accelerates the FDA 510(k) process while also supporting ** upstream activities ** such as materials selection, design considerations, and early product strategy.
+      By combining FDA data with a wide range of ** trusted industry and scientific sources **, Agent Astro provides a complete view of regulatory precedent, design implications, and market context.
       Instead of free - form text, it produces ** submission - ready outputs ** tailored to FDA expectations, while giving teams the intelligence they need to design smarter and plan more strategically.
-    ** In short: AgentAstro is both a regulatory assistant and a strategic intelligence tool, helping MedTech companies move faster from concept to clearance.** `,
+    ** In short: Agent Astro is both a regulatory assistant and a strategic intelligence tool, helping MedTech companies move faster from concept to clearance.** `,
     },
     {
-      question: 'What makes AgentAstro different?',
-      answer: `AgentAstro is built from the ground up for FDA medical device submissions—with **data protection as our top priority.**<br />
+      question: 'What makes Agent Astro different?',
+      answer: `Agent Astro is built from the ground up for FDA medical device submissions—with **data protection as our top priority.**<br />
       **1. Your proprietary data stays yours.** Files you upload are encrypted, isolated, and never shared. Unlike general LLMs, your data is never used to train outside models or exposed to other users.<br />
-      **2. Purpose-built for 510(k) submissions.** Where general AI tools generate free-form text, AgentAstro produces **submission-ready outputs** aligned with FDA expectations.<br />
-      **3. Direct FDA integration.** AgentAstro continuously pulls from FDA's public databases to surface predicates, timelines, and review decisions—data that general LLMs don't reliably provide.<br />
-      **4. Specialized AI collaboration.** Instead of one generic model, AgentAstro uses multiple AIs, each tuned for regulatory tasks, to deliver the most accurate results.<br />
+      **2. Purpose-built for 510(k) submissions.** Where general AI tools generate free-form text, Agent Astro produces **submission-ready outputs** aligned with FDA expectations.<br />
+      **3. Direct FDA integration.** Agent Astro continuously pulls from FDA's public databases to surface predicates, timelines, and review decisions—data that general LLMs don't reliably provide.<br />
+      **4. Specialized AI collaboration.** Instead of one generic model, Agent Astro uses multiple AIs, each tuned for regulatory tasks, to deliver the most accurate results.<br />
       **5. Team-ready.** Designed for regulatory teams to collaborate in one workspace with shared insights and outputs.
       **6. Intuitive and built-to-purpose.** No prompt-hacking required—professionals can focus on strategy, not workarounds.
       **7. Expert-informed.** Developed alongside regulatory affairs leaders to reflect real-world FDA practice.
-      **In short: AgentAstro keeps your data secure and delivers FDA-ready outputs—something general LLMs can't match.**`,
+      **In short: Agent Astro keeps your data secure and delivers FDA-ready outputs—something general LLMs can't match.**`,
     },
 
     {
-      question: 'How is AgentAstro different from general AI tools?',
-      answer: `General-purpose AI tools like ChatGPT can generate text, but they are not designed for regulatory submissions. AgentAstro is **purpose-built for MedTech**, with advantages that generic AI cannot match:
+      question: 'How is Agent Astro different from general AI tools?',
+      answer: `General-purpose AI tools like ChatGPT can generate text, but they are not designed for regulatory submissions. Agent Astro is **purpose-built for MedTech**, with advantages that generic AI cannot match:
       1. **Secure by design** — Your proprietary data is encrypted, isolated, and never used to train external models.
-      2. **FDA-specific intelligence** — AgentAstro integrates FDA databases and regulatory precedent directly into its workflows.
+      2. **FDA-specific intelligence** — Agent Astro integrates FDA databases and regulatory precedent directly into its workflows.
       3. **Submission-ready outputs** — Instead of free-form text, you get structured tables, justifications, and draft sections aligned with FDA expectations.
       4. **Specialized AI workflows** — Multiple AIs collaborate to handle tasks like predicate mapping, precedent analysis, and regulatory justification.
       5. **Team collaboration** — Built for regulatory teams to share, refine, and align on outputs in one workspace.
       6. **Expert-informed** — Developed with input from regulatory professionals and MedTech leaders to reflect real-world practice.
-      **In short: ChatGPT can write, but AgentAstro can help you clear the FDA.**`,
+      **In short: ChatGPT can write, but Agent Astro can help you clear the FDA.**`,
     },
 
     {
-      question: 'Who is AgentAstro for?',
-      answer: `AgentAstro is designed for MedTech teams at every stage of development, not only during submission prep. It supports:
+      question: 'Who is Agent Astro for?',
+      answer: `Agent Astro is designed for MedTech teams at every stage of development, not only during submission prep. It supports:
 
 • **Regulatory Affairs professionals** who need faster, more confident predicate research and submission-ready outputs.
 
@@ -153,12 +153,12 @@ const StoryPage = () => {
 
 • **Executives and strategy leaders** who rely on regulatory intelligence, industry trends, and competitive monitoring to guide investment and product planning.
 
-**In short: AgentAstro is for anyone in MedTech who wants to design smarter, move faster, and submit with confidence.**`,
+**In short: Agent Astro is for anyone in MedTech who wants to design smarter, move faster, and submit with confidence.**`,
     },
 
     {
-      question: 'What problems does AgentAstro solve?',
-      answer: `The FDA 510(k) process is complex, slow, and resource-intensive. AgentAstro transforms how MedTech teams approach it by:
+      question: 'What problems does Agent Astro solve?',
+      answer: `The FDA 510(k) process is complex, slow, and resource-intensive. Agent Astro transforms how MedTech teams approach it by:
 
 • **Accelerating predicate research** — surfacing relevant devices and precedents in minutes instead of weeks.
 
@@ -170,45 +170,45 @@ const StoryPage = () => {
 
 • **Enabling smarter planning** — providing regulatory intelligence that helps teams anticipate risks, set realistic timelines, and stay aligned with industry expectations.
 
-**In short: AgentAstro makes FDA submissions faster, stronger, and more efficient by an order of magnitude—helping MedTech companies design smarter and clear the FDA with confidence.**`,
+**In short: Agent Astro makes FDA submissions faster, stronger, and more efficient by an order of magnitude—helping MedTech companies design smarter and clear the FDA with confidence.**`,
     },
 
     // PRODUCT MECHANICS SECTION
 
     {
-      question: 'How does AgentAstro work?',
-      answer: `AgentAstro combines FDA databases with advanced AI workflows to deliver 10x gains in efficiency and effectiveness.
+      question: 'How does Agent Astro work?',
+      answer: `Agent Astro combines FDA databases with advanced AI workflows to deliver 10x gains in efficiency and effectiveness.
 
 1. **Curates and contextualizes FDA data** — automatically compiles device information, predicates, and review history.
 
 2. **Runs multi-AI workflows** — different specialized AI models collaborate to handle tasks like predicate mapping, precedent analysis, and drafting submission-ready content.
 
-3. **Generates structured outputs** — instead of free-form text, AgentAstro produces tables, justifications, and draft sections aligned with FDA expectations.
+3. **Generates structured outputs** — instead of free-form text, Agent Astro produces tables, justifications, and draft sections aligned with FDA expectations.
 
 4. **Supports team collaboration** — multiple stakeholders can review, refine, and share insights in one workspace.
 
 5. **Protects proprietary data** — your uploads are encrypted, isolated, and never used to train outside models, ensuring complete confidentiality.
 
-**In short: AgentAstro transforms raw FDA data into secure, submission-ready intelligence—giving MedTech teams an order-of-magnitude advantage over manual work or general AI tools.**`,
+**In short: Agent Astro transforms raw FDA data into secure, submission-ready intelligence—giving MedTech teams an order-of-magnitude advantage over manual work or general AI tools.**`,
     },
 
 
     // COMPANY INFORMATION
     {
-      question: 'Who created AgentAstro?',
-      answer: `AgentAstro is the product of a unique collaboration between **MedTech veterans, regulatory professionals, and AI engineers.** The idea grew out of a pressing reality: medical device companies spend enormous amounts of time and resources navigating the FDA 510(k) process, yet the tools available to them are either too generic or too risky to trust with sensitive information.
+      question: 'Who created Agent Astro?',
+      answer: `Agent Astro is the product of a unique collaboration between **MedTech veterans, regulatory professionals, and AI engineers.** The idea grew out of a pressing reality: medical device companies spend enormous amounts of time and resources navigating the FDA 510(k) process, yet the tools available to them are either too generic or too risky to trust with sensitive information.
 
-General-purpose AI tools can't guarantee that proprietary data stays private, and many companies are rightly concerned that confidential files might be exposed or reused to train outside models. AgentAstro was designed to solve this problem from the ground up. Proprietary data is always encrypted, isolated, and never used to train external systems—ensuring companies can take advantage of AI without sacrificing security.
+General-purpose AI tools can't guarantee that proprietary data stays private, and many companies are rightly concerned that confidential files might be exposed or reused to train outside models. Agent Astro was designed to solve this problem from the ground up. Proprietary data is always encrypted, isolated, and never used to train external systems—ensuring companies can take advantage of AI without sacrificing security.
 
 Our MedTech advisors bring firsthand experience launching devices and managing the pressures of FDA clearance. Our regulatory professionals ensure that every output reflects real-world submission practices and aligns with FDA expectations. And our AI engineers translate that expertise into secure, specialized workflows that go far beyond what general-purpose AI tools can deliver.
 
-**The result is AgentAstro: a platform built at the intersection of regulatory expertise and AI innovation, designed to make the FDA process faster, smarter, and more secure.**`,
+**The result is Agent Astro: a platform built at the intersection of regulatory expertise and AI innovation, designed to make the FDA process faster, smarter, and more secure.**`,
     },
 
     // PRICING & TRIAL SECTION
     {
       question: 'What subscription plans are available?',
-      answer: `AgentAstro offers three subscription tiers designed to fit different needs:
+      answer: `Agent Astro offers three subscription tiers designed to fit different needs:
       
 • ** Solo ** — For individual users or consultants managing occasional submissions.Provides full platform access at an accessible entry point.
 
@@ -217,28 +217,28 @@ Our MedTech advisors bring firsthand experience launching devices and managing t
 • ** Enterprise ** — For high - volume organizations that require advanced support, enhanced security, and custom integrations.
 
 Plans are available on a monthly or annual basis.
-**In short: whether you’re a solo consultant, a growing team, or a global enterprise, AgentAstro offers a plan built to match your scale and workflow.**`,
+**In short: whether you’re a solo consultant, a growing team, or a global enterprise, Agent Astro offers a plan built to match your scale and workflow.**`,
     },
     {
       question: 'How do I get started?',
-      answer: `Getting started with AgentAstro is simple:
+      answer: `Getting started with Agent Astro is simple:
 
 1. **Request a demo** — Our team will walk you through the platform and show how it can support your regulatory needs.
 
 2. **Choose your plan** — Select the Solo, Team, or Enterprise subscription that fits your workflow.
 
-3. **Onboard quickly** — We'll set up your account and provide everything you need to begin using AgentAstro right away.
+3. **Onboard quickly** — We'll set up your account and provide everything you need to begin using Agent Astro right away.
 
 **In short: book a demo, pick a plan, and start accelerating your FDA submissions.**`,
     },
     {
-      question: 'Is my data secure with AgentAstro?',
-      answer: `Data security is our top priority at AgentAstro. We understand that regulatory submissions often involve sensitive proprietary information, so we’ve built the platform with multiple layers of protection:
+      question: 'Is my data secure with Agent Astro?',
+      answer: `Data security is our top priority at Agent Astro. We understand that regulatory submissions often involve sensitive proprietary information, so we’ve built the platform with multiple layers of protection:
       1. **Encryption** — All data uploads are encrypted both in transit and at rest using industry-standard protocols.
       2. **Isolation** — Your files are stored in isolated environments to prevent unauthorized access.
       3. **No external training** — Proprietary data is never used to train outside models or shared with other users.
       4. **Compliance** — We adhere to relevant data protection regulations and best practices to ensure your information is handled responsibly.
-      **In short: with AgentAstro, your data stays secure, private, and under your control—so you can leverage AI without compromise.**`,
+      **In short: with Agent Astro, your data stays secure, private, and under your control—so you can leverage AI without compromise.**`,
     },
 
   ];
@@ -277,13 +277,13 @@ Plans are available on a monthly or annual basis.
     {
       name: 'Jay Litkey',
       image: '/Advisor/jay.png',
-      bio: 'Jay Litkey, a serial SaaS entrepreneur with over 25 years of experience who founded Embotics, currently serves as SVP at Flexera and advisor to AgentAstro.',
+      bio: 'Jay Litkey, a serial SaaS entrepreneur with over 25 years of experience who founded Embotics, currently serves as SVP at Flexera and advisor to Agent Astro.',
     },
-    // {
-    //   name: 'Dr. Om Singh',
-    //   image: '/Advisor/om.jpg',
-    //   bio: 'Dr. Singh, a former FDA Lead Reviewer, assessed 510(k), PMA, and IND submissions, ensuring medical device safety, efficacy, sterilization, reprocessing compliance, and adherence to regulatory standards.',
-    // }
+    {
+      name: 'Dr. Om Singh',
+      image: '/Advisor/om.jpg',
+      bio: 'Dr. Singh, a former FDA Lead Reviewer, assessed 510(k), PMA, and IND submissions, ensuring medical device safety, efficacy, sterilization, reprocessing compliance, and adherence to regulatory standards.',
+    }
   ];
 
   const timelineItems = [
@@ -312,7 +312,7 @@ Plans are available on a monthly or annual basis.
     },
     {
       title: 'The Impact Today',
-      content: 'AgentAstro now powers regulatory decisions for hundreds of medical device companies, reducing research time and accelerating patient access to life-saving technologies.',
+      content: 'Agent Astro now powers regulatory decisions for hundreds of medical device companies, reducing research time and accelerating patient access to life-saving technologies.',
       gradient: 'from-purple-500/15 to-blue-500/15',
       dotGradient: "bg-[#061A40]",
       side: 'right',
@@ -623,7 +623,7 @@ Plans are available on a monthly or annual basis.
               }`}
           >
             <h2 className="font-gesta text-5xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              Your guide to using AgentAstro
+              Your guide to using Agent Astro
             </h2>
           </div>
           <div className="space-y-4">
@@ -1048,4 +1048,3 @@ Plans are available on a monthly or annual basis.
 };
 
 export default StoryPage;
-
