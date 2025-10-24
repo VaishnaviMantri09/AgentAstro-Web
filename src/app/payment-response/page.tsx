@@ -62,12 +62,9 @@ function ResponseDetails() {
                         )}
 
                         <p className="mb-2 font-gesta text-lg">
-                            You will receive further details about your account on the below email  :
+                            You can now signup and access all premium features at <a href="https://orbit.agentastro.ai" className="text-blue-600 text-lg underline font-gesta">https://orbit.agentastro.ai/</a>
                         </p>
 
-                        <p className="font-gesta text-xl font-semibold text-gray-800 mb-4">
-                            {session.customer_details?.email}
-                        </p>
                     </>
                 ) : (
                     <p className="font-gesta">No session information found.</p>
