@@ -14,26 +14,26 @@ export interface Article {
 const rawArticles: Omit<Article, 'slug'>[] = [
     {
         id: 1,
-        title: "Meet AgentAstro at the MedTech Conference — Booth 728",
-        excerpt: "Join thousands of industry leaders October 5–8, 2025, in San Diego. And make sure to stop by Booth 728 to see AgentAstro in action, pick up a conference giveaway, and learn how we’re transforming FDA submissions with AI.",
+        title: "Meet Agent Astro at the MedTech Conference — Booth 728",
+        excerpt: "Join thousands of industry leaders October 5–8, 2025, in San Diego. And make sure to stop by Booth 728 to see Agent Astro in action, pick up a conference giveaway, and learn how we’re transforming FDA submissions with AI.",
         image: '/Articles/article-1.jpg',
         featured: true,
         content: `
         <p>This fall, the global medtech community will gather in San Diego for the MedTech Conference, hosted by AdvaMed — four days of education, networking, and innovation at a pivotal time for the industry. With 100+ sessions, 3,500+ attendees, 400+ speakers, 1,600 companies, and 200+ exhibitors, the event is one of the most influential gatherings in health care.</p>
         <br />
         <p>The conference provides an all-in-one platform for critical conversations that are redefining the future of health care. It’s where medtech CEOs, regulators, startups, and investors come together to shape what’s next.</p>
-        <h2>Why Visit AgentAstro?</h2>
-        <p>At Booth 728, you’ll find AgentAstro, the AI-powered regulatory platform designed to make FDA 510(k) submissions faster, clearer, and more strategic. Whether you’re preparing your first submission or managing dozens each year, AgentAstro helps:</p>
+        <h2>Why Visit Agent Astro?</h2>
+        <p>At Booth 728, you’ll find Agent Astro, the AI-powered regulatory platform designed to make FDA 510(k) submissions faster, clearer, and more strategic. Whether you’re preparing your first submission or managing dozens each year, Agent Astro helps:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-sky-400">
             <li><strong> - &nbsp; Identify and analyze predicate devices in seconds.</strong></li>
             <li><strong> - &nbsp; Generate submission-ready content aligned with FDA guidance.</strong></li>
             <li><strong> - &nbsp; Benchmark testing and risk expectations based on real-world precedents.</strong></li>
         </ul>
         <h2>See It in Action</h2>
-        <p>We’ll be running live demos of AgentAstro throughout the conference, including new features that extend value beyond clearance into ongoing compliance. This is your opportunity to see how AI can save your team time, reduce costs, and strengthen submissions.</p>
-        <p> A Little Fun, Too.It’s not all business. We’ll also have adorable AgentAstro stuffies waiting for you at the booth. Stop by, grab one, and take home a reminder of your time in San Diego.</p>
+        <p>We’ll be running live demos of Agent Astro throughout the conference, including new features that extend value beyond clearance into ongoing compliance. This is your opportunity to see how AI can save your team time, reduce costs, and strengthen submissions.</p>
+        <p> A Little Fun, Too.It’s not all business. We’ll also have adorable Agent Astro stuffies waiting for you at the booth. Stop by, grab one, and take home a reminder of your time in San Diego.</p>
         <h2>Exclusive Offer for Attendees</h2>
-        <p>If you sign up at the booth, you’ll receive an exclusive 25% discount for the first three months of your AgentAstro subscription. It’s our way of thanking early adopters who are ready to help shape the future of regulatory technology.</p>
+        <p>If you sign up at the booth, you’ll receive an exclusive 25% discount for the first three months of your Agent Astro subscription. It’s our way of thanking early adopters who are ready to help shape the future of regulatory technology.</p>
         <h3>Join Us in San Diego!</h3>
         `,
     },
@@ -47,7 +47,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         content: `
         <p>Big changes are underway in U.S. medical device regulation. The FDA has officially begun its shift from the decades-old Quality System Regulation (QSR) to the new Quality Management System Regulation (QMSR), and it’s going to impact how every FDA-facing company manages quality, documentation, and inspection readiness.</p>
         <br />
-        <p>At AgentAstro, we help device innovators turn complex regulatory expectations into fast, focused submissions. That mission becomes even more important as QMSR changes the rules—and the mindset—around compliance.</p>
+        <p>At Agent Astro, we help device innovators turn complex regulatory expectations into fast, focused submissions. That mission becomes even more important as QMSR changes the rules—and the mindset—around compliance.</p>
         <br />
         <p>Here’s what you need to know and how to stay ahead.</p>
         <h2>What Is QMSR, and Why Should You Care?</h2>
@@ -97,8 +97,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
                     <strong> - &nbsp; Execute with Intent : </strong> &nbsp; Once gaps are identified, prioritise fixes with a clear implementation plan. Assign ownership, establish realistic timelines, and build in checkpoints. Make sure your management reviews include quality metrics that reflect QMSR priorities—not just legacy indicators. Think of this as building a compliance system that can withstand real-world pressure.
                 </li>
             </ol>
-            <h2>Where AgentAstro Fits In</h2>
-            <p>Our mission is to eliminate guesswork and reduce the friction of regulatory submission. As QMSR reshapes what the FDA expects from your quality system, AgentAstro will help you:</p>
+            <h2>Where Agent Astro Fits In</h2>
+            <p>Our mission is to eliminate guesswork and reduce the friction of regulatory submission. As QMSR reshapes what the FDA expects from your quality system, Agent Astro will help you:</p>
             <ol class="list-decimal pl-6 space-y-2 marker:text-sky-400">
                 <li>
                     <strong> - &nbsp; Align documentation with the new terminology and structure. </strong>
@@ -122,7 +122,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             </br>
             <p>Companies that wait until 2026 to act may find themselves scrambling. Those that take a thoughtful, proactive approach now will be better positioned for inspections and better equipped to scale.</p>
             </br>
-            <p>AgentAstro is here to help you make that transition smooth, intelligent, and fast. Let’s build smarter submissions together.</p>
+            <p>Agent Astro is here to help you make that transition smooth, intelligent, and fast. Let’s build smarter submissions together.</p>
         `,
     },
     {
@@ -150,8 +150,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
                 <li><strong> - &nbsp; Transparent documentation of update processes and monitoring responsibilities is as critical as technical performance data.</strong></li>
                 <li><strong> - &nbsp; Postmarket vigilance is not optional — it is a regulatory expectation.</strong></li>
             </ul>
-            <h2>Where AgentAstro Fits In</h2>
-            <p>At AgentAstro, we see this shift as an opportunity for MedTech innovators to get ahead of the curve. Our platform helps teams:</p>
+            <h2>Where Agent Astro Fits In</h2>
+            <p>At Agent Astro, we see this shift as an opportunity for MedTech innovators to get ahead of the curve. Our platform helps teams:</p>
             <ul class="list-disc pl-6 space-y-2 marker:text-green-500">
                 <li><strong> - &nbsp; Map requirements across FDA guidance and global standards to ensure alignment.</strong></li>
                 <li><strong> - &nbsp; Benchmark against predicate devices to understand what cybersecurity evidence the FDA has previously accepted.</strong></li>
@@ -189,8 +189,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> - &nbsp; Failing to justify limited testing can trigger FDA requests for additional data, delaying clearance.</strong></li>
             <li><strong> - &nbsp; Transparent reasoning is just as important as raw data.</strong></li>
         </ul>
-        <h2>Where AgentAstro Fits In</h2>
-        <p>AgentAstro helps manufacturers transform biocompatibility from a compliance hurdle into a strategic advantage:</p>
+        <h2>Where Agent Astro Fits In</h2>
+        <p>Agent Astro helps manufacturers transform biocompatibility from a compliance hurdle into a strategic advantage:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-green-500">
             <li><strong> - &nbsp; Map contact type and duration against ISO 10993 requirements and FDA guidance.</strong></li>
             <li><strong> - &nbsp; Identify predicate devices where the FDA accepted rationales instead of exhaustive testing.</strong></li>
@@ -260,14 +260,14 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> - &nbsp; Regulatory as a growth lever, not a compliance burden.</strong></li>
         </ul>
         <h3>Smarter Workflows Start Here</h3>
-        <p>We built AgentAstro because we believe regulatory should be a strategic advantage. By surfacing predicate devices, similar approvals, and relevant FDA data in seconds, we help regulatory professionals build submissions that are:</p>
+        <p>We built Agent Astro because we believe regulatory should be a strategic advantage. By surfacing predicate devices, similar approvals, and relevant FDA data in seconds, we help regulatory professionals build submissions that are:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-red-500">
             <li><strong> - &nbsp; Faster:</strong> &nbsp;Save dozens of hours per submission by automating research.</li>
             <li><strong> - &nbsp; Clearer:</strong>&nbsp;Benchmark testing and risk decisions against FDA precedent.</li>
             <li><strong> - &nbsp; Stronger:</strong>&nbsp;submission-ready content grounded in real guidance.</li>
         </ul>
         <p>But this isn’t just about tooling. It’s about mindset. If you’re still treating regulatory as a final step instead of a core strategic function, you’re giving up one of your biggest advantages.</p>
-        <p>The companies that win in the next decade will be those that treat regulatory not as overhead, but as strategy. AgentAstro helps you get there.</p>
+        <p>The companies that win in the next decade will be those that treat regulatory not as overhead, but as strategy. Agent Astro helps you get there.</p>
         `
     },
     {
@@ -297,8 +297,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> - &nbsp; Protocol Scrutiny : </strong>&nbsp; Submissions should explain why a chosen test method and acceptance criteria are appropriate for the intended use.</li>
             <li><strong> - &nbsp; Predicate Context : </strong>&nbsp; FDA reviewers often look at how similar coated devices handled particulate evaluation. Gaps or inconsistencies can trigger additional information requests.</li>
         </ul>
-        <h2>Where AgentAstro Fits In</h2>
-        <p>AgentAstro supports RA teams by:</p>
+        <h2>Where Agent Astro Fits In</h2>
+        <p>Agent Astro supports RA teams by:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-green-500">
             <li><strong> - &nbsp; Surfacing predicates where particulate testing was included — helping sponsors anticipate FDA expectations.</strong></li>
             <li><strong> - &nbsp; Comparing submissions to show variation in acceptance criteria across similar devices.</strong></li>   
@@ -311,7 +311,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> 3. &nbsp; Benchmark against predicates to set acceptance criteria that will withstand reviewer scrutiny.</strong></li>
             <li><strong> 4. &nbsp; Document the risk link: Tie particulate findings back to ISO 14971 to show clinical impact, not just particle counts.</strong></li>
         </ul>
-        <p>Takeaway: Particulate testing is no longer an afterthought. RA professionals who anticipate FDA concerns, justify protocols clearly, and leverage predicate precedent can prevent costly review delays. With AgentAstro, those insights are surfaced in seconds instead of weeks.</p>
+        <p>Takeaway: Particulate testing is no longer an afterthought. RA professionals who anticipate FDA concerns, justify protocols clearly, and leverage predicate precedent can prevent costly review delays. With Agent Astro, those insights are surfaced in seconds instead of weeks.</p>
         `
     },
     {
@@ -371,7 +371,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <h2>Strategic Submissions Start with Strategic Questions</h2>
         <p>Too often, regulatory submissions are treated like paperwork. But the smartest MedTech teams know that regulatory is strategy. In today’s environment — with the QMSR transition underway, cybersecurity and usability testing under sharper review, and AI/ML devices entering the spotlight — the stakes are higher than ever.</p>
         <p>A well-informed, precedent-based approach can mean the difference between a smooth path to market and months of costly back-and-forth.</p>
-        <p>AgentAstro was built to help regulatory teams answer these questions faster — and with confidence. From predicate research to precedent identification, we streamline what matters most.</p>
+        <p>Agent Astro was built to help regulatory teams answer these questions faster — and with confidence. From predicate research to precedent identification, we streamline what matters most.</p>
         `
     },
     {
@@ -401,8 +401,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> - &nbsp; Critical Task Analysis :</strong>&nbsp;FDA reviewers often focus on whether the study properly identified "critical tasks" — steps that, if done incorrectly, could cause harm.</li>
             <li><strong> - &nbsp; Postmarket Connection : </strong>&nbsp;Usability failures often emerge in recalls and MDR reports; linking premarket human factors studies to postmarket vigilance strengthens compliance narratives.</li>
         </ul>
-        <h2>Where AgentAstro Fits In</h2>
-        <p>AgentAstro helps RA teams by:</p>
+        <h2>Where Agent Astro Fits In</h2>
+        <p>Agent Astro helps RA teams by:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-red-500">           
             <li><strong> - &nbsp; Surfacing predicates where usability studies were required — highlighting FDA precedents for study scope and sample size. </strong></li>
             <li><strong> - &nbsp; Mapping regulatory requirements against IEC 62366-1 and FDA guidance for consistency.</strong></li>
@@ -415,7 +415,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong>3.&nbsp; Recruit representative users :</strong>&nbsp;FDA will challenge studies that use "easy" populations instead of the intended user base.</li>            <li><strong>4.&nbsp; Benchmark against predicates :</strong>&nbsp;Use prior FDA submissions to calibrate your study's scope and sample size.</li>
             <li><strong>5.&nbsp; Document iteratively :</strong>&nbsp;Show how formative studies informed design improvements before final validation.</li>
         </ol>
-        <p>Takeaway: Human factors is no longer just about good design — it is a regulatory requirement tied directly to safety and effectiveness. RA professionals who frame usability as risk management, not just user experience, will be best positioned for smooth FDA reviews. AgentAstro helps surface predicate precedents and generate structured reports that strengthen this argument.</p>
+        <p>Takeaway: Human factors is no longer just about good design — it is a regulatory requirement tied directly to safety and effectiveness. RA professionals who frame usability as risk management, not just user experience, will be best positioned for smooth FDA reviews. Agent Astro helps surface predicate precedents and generate structured reports that strengthen this argument.</p>
         `
     },
     {
@@ -449,7 +449,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <li><strong>- &nbsp; Flexibility Exists :</strong>&nbsp; Innovative designs — adaptive, Bayesian, or RWE-augmented — can reduce sample burden if well-justified.</li>
         </ul>
 
-        <h2>Where AgentAstro Fits</h2>
+        <h2>Where Agent Astro Fits</h2>
         <ul>
         <li><strong>- &nbsp; Surfacing predicates that show the range of sample sizes FDA has accepted for similar devices.</strong></li>
         <li><strong>- &nbsp; Highlighting outliers where FDA demanded more or less data, giving early warning of potential reviewer concerns.</strong></li>
@@ -466,7 +466,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         </ol>
         <p>Takeaway: “How many is enough?” is not about finding a single number. It’s about demonstrating that your sample size is 
         adequate, justified, and risk-appropriate. RA professionals who ground their rationale in both precedent and FDA guidance 
-        will be best prepared for a smooth review. AgentAstro helps surface those precedents and generate justification language 
+        will be best prepared for a smooth review. Agent Astro helps surface those precedents and generate justification language 
         that saves time and strengthens submissions.</p>
         `
     },
@@ -479,7 +479,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         content: `
         <p>When preparing a 510(k) submission, much of the focus tends to land on testing, formatting, and documentation. But long before the paperwork begins, one high-impact decision can dramatically shape your regulatory path: choosing the right predicate device.</p>
         <br/>
-        <p>The right predicate can strengthen your case, shorten timelines, and reduce costly review cycles. The wrong one can do the opposite — introducing risk, uncertainty, and the potential for rejection. In this post, we’ll explore how to de-risk submissions through smarter precedent analysis and how AgentAstro makes this process faster, clearer, and more reliable.</p>
+        <p>The right predicate can strengthen your case, shorten timelines, and reduce costly review cycles. The wrong one can do the opposite — introducing risk, uncertainty, and the potential for rejection. In this post, we’ll explore how to de-risk submissions through smarter precedent analysis and how Agent Astro makes this process faster, clearer, and more reliable.</p>
         <h2>Why Predicate Selection Matters So Much</h2>
         <p>The 510(k) pathway relies on demonstrating that your device is substantially equivalent to one that’s already been cleared by the FDA. That’s your predicate. But equivalence isn’t just a box to check — it’s the foundation of your entire submission.</p>
         <p><strong>A well-matched predicate:</strong></p>
@@ -509,11 +509,11 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <li><strong> - Increases the risk of selecting an outdated or weak predicate.</strong></li>
         </ul>
         <p>This approach is vulnerable to oversight and often leads to conservative, suboptimal decisions — not because the expertise isn’t there, but because the tools aren’t.</p>
-        <h2>AgentAstro: A Smarter Way to Find Precedent</h2>
-        <p>AgentAstro transforms how regulatory teams discover, compare, and leverage predicate devices.</p>
+        <h2>Agent Astro: A Smarter Way to Find Precedent</h2>
+        <p>Agent Astro transforms how regulatory teams discover, compare, and leverage predicate devices.</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-blue-500">
             <li><strong> - Advanced Predicate Discovery:</strong> Search by intended use, technology, product code, or even natural language to uncover devices that match across key regulatory dimensions.</li>
-            <li><strong> - AI-Powered Similarity Matching:</strong> Instead of relying on keywords, AgentAstro uses AI to find devices that are functionally and strategically similar — even if they use different terminology.</li>
+            <li><strong> - AI-Powered Similarity Matching:</strong> Instead of relying on keywords, Agent Astro uses AI to find devices that are functionally and strategically similar — even if they use different terminology.</li>
             <li><strong> -  Clear Justification Language:</strong> View how similar devices justified substantial equivalence. Surface phrases that passed FDA review and adapt them to your own strategy.</li>
             <li><strong> - Side-by-Side Comparisons:</strong> Compare candidates by intended use, technology, testing protocols, and clearance outcomes — all in one place.</li>
         </ul>
@@ -530,7 +530,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <h2>Conclusion: Don’t Just Find a Predicate, Choose the Right One</h2>
         <p>Too often, predicate selection is treated as a procedural step. But it’s one of the few levers in your control that can de-risk your submission significantly.</p>
         <br />
-        <p>AgentAstro empowers your team to find the strongest precedents — faster — and use them to build submissions that reviewers can trust.</p>
+        <p>Agent Astro empowers your team to find the strongest precedents — faster — and use them to build submissions that reviewers can trust.</p>
         `,
     },
     {
@@ -544,7 +544,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <br />
         <p>That’s because while the FDA’s playbook is technically public, it was never designed to be searchable, strategic, or user-friendly.</p>
         <br />
-        <p>At AgentAstro, we’re solving that problem — by turning thousands of static documents into an intelligent, searchable knowledge base for regulatory professionals. Here’s how we do it — and why it matters more than ever.</p>
+        <p>At Agent Astro, we’re solving that problem — by turning thousands of static documents into an intelligent, searchable knowledge base for regulatory professionals. Here’s how we do it — and why it matters more than ever.</p>
         <h2>The FDA Shares Almost Everything — That’s the Opportunity</h2>
         <p>The U.S. Food and Drug Administration publishes an extraordinary amount of information related to device approvals and regulatory processes. This includes:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-blue-500">
@@ -568,7 +568,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <p>Even experienced regulatory professionals often start from scratch — not because they don’t know what to do, but because they don’t have tools that make the public data usable.</p>
         <h2>The Insight: The Answers Are Already Out There — Hidden in Plain Sight</h2>
         <p>Strong submissions don’t need to reinvent the wheel. The language, structure, and rationale that succeeded in the past can inform smarter strategies today.</p>
-        <p><strong>That’s the core idea behind AgentAstro:</strong></p>
+        <p><strong>That’s the core idea behind Agent Astro:</strong></p>
         <p>If the regulatory playbook is already written, let’s make it accessible — and actionable.</p>
         <p>Every 510(k) cleared, every De Novo granted, every PMA approved holds insights about what works:</p>
         <ul class="list-disc pl-6 space-y-2 marker:text-blue-500">
@@ -578,17 +578,17 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <li><strong> - What claims were permitted in the indications for use?</strong></li>
         </ul>
         <p>But until now, there was no fast, reliable way to mine those insights — at scale.</p>
-        <p><strong>From Data Chaos to Clarity: How AgentAstro Makes the FDA Playbook Usable ?</strong></p>
+        <p><strong>From Data Chaos to Clarity: How Agent Astro Makes the FDA Playbook Usable ?</strong></p>
         <br />
         <img src="/Articles/comparsion-playbook.png" alt="FDA Playbook" class="w-full h-auto rounded-lg shadow-lg mb-6" />
-        <p><strong>From Data Chaos to Clarity: How AgentAstro Makes the FDA Playbook Usable ?</strong></p>
+        <p><strong>From Data Chaos to Clarity: How Agent Astro Makes the FDA Playbook Usable ?</strong></p>
         <p>Here’s how we turn scattered regulatory documents into strategic intelligence:</p>
         <ol class="list-decimal pl-6 space-y-2 marker:text-green-500">
             <li>
                 <strong> - AI-Powered Indexing of FDA Submissions:</strong> We parse and structure thousands of summaries, mapping key elements like device class, intended use, performance testing, and equivalence language — turning unstructured PDFs into searchable data.
             </li>
             <li>
-                <strong> - Retrieval-Augmented Generation (RAG):</strong> AgentAstro uses RAG to pair verified regulatory content with natural language prompts. That means you can ask a question and get not just an answer — but a citation from a real FDA decision to back it up.
+                <strong> - Retrieval-Augmented Generation (RAG):</strong> Agent Astro uses RAG to pair verified regulatory content with natural language prompts. That means you can ask a question and get not just an answer — but a citation from a real FDA decision to back it up.
             </li>
             <li>
                 <strong> - Predicate Discovery, Reimagined:</strong> Our system cross-references devices by characteristics, not just keywords — allowing you to discover predicate options and similar devices based on real-world relevance, not guesswork. 
@@ -607,7 +607,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
             <p>This doesn’t just save time. It builds confidence. It reduces review cycles. And it helps level the playing field for smaller companies competing with resource-heavy giants.</p>
             <br/>
             <p><strong>Regulatory Intelligence, Finally Within Reach:</strong></p>
-            <p>We didn’t build AgentAstro to replace regulatory professionals — we built it to empower them. You still lead the strategy, the judgement calls, and the submission. We just give you faster, better access to the data that matters most.</p>
+            <p>We didn’t build Agent Astro to replace regulatory professionals — we built it to empower them. You still lead the strategy, the judgement calls, and the submission. We just give you faster, better access to the data that matters most.</p>
             <p><strong>The FDA’s knowledge is written in public. You just need the right lens to read it.</strong></p>
             `
     },
@@ -619,7 +619,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         featured: false,
         content: `
         <p>For decades, regulatory affairs has been a discipline defined by depth, rigor, and expertise. While medical device technology has advanced at a rapid pace, the regulatory process has lagged behind — still reliant on manual research, static documents, and legacy systems that have barely changed in a generation.</p>
-        <p>That model is no longer sustainable.We are entering a new era in which artificial intelligence is not just accelerating regulatory work, but also redefining how it is approached. At AgentAstro, we believe this is not a passing trend. It is a lasting transformation.</p>
+        <p>That model is no longer sustainable.We are entering a new era in which artificial intelligence is not just accelerating regulatory work, but also redefining how it is approached. At Agent Astro, we believe this is not a passing trend. It is a lasting transformation.</p>
         <h2>Regulatory Professionals Are Experts — But the Process Holds Them Back</h2>
         <p>The people working in regulatory affairs are some of the most skilled professionals in the MedTech space. Yet their expertise is often diluted by:</p>
         <ul>
@@ -632,7 +632,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <h3>AI Is Driving Three Major Shifts in Regulatory Affairs</h3>
         <p>Artificial intelligence is changing how regulatory teams think, act, and plan — not just by making work faster, but by expanding what is possible.</p>
         <h3>From Search to Insight</h3>
-        <p>AI does more than retrieve documents. It interprets them. With systems like AgentAstro, regulatory professionals can surface relevant predicates, equivalence arguments, testing strategies, and precedent language that were once buried in PDFs.</p>
+        <p>AI does more than retrieve documents. It interprets them. With systems like Agent Astro, regulatory professionals can surface relevant predicates, equivalence arguments, testing strategies, and precedent language that were once buried in PDFs.</p>
         <h3>From Siloed Expertise to Augmented Teams</h3>
         <p>AI gives smaller teams the power to scale. Instead of relying solely on memory or manual searches, they can build submissions based on precedent and structured insights — without adding headcount.</p>
         <h3>From Static Submissions to Iterative Strategies</h3>
@@ -646,8 +646,8 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <li><strong>- &nbsp; Smaller teams can compete with larger organizations on regulatory quality.</strong></li>
         </ul>
         <p>In short, regulatory operations become not just a compliance necessity, but a strategic advantage.</p>
-        <h2>Where AgentAstro Fits In</h2>
-        <p>AgentAstro is designed to support this shift.</p>
+        <h2>Where Agent Astro Fits In</h2>
+        <p>Agent Astro is designed to support this shift.</p>
         <ul>
         <li><strong>- &nbsp; We use Retrieval-Augmented Generation (RAG) to merge verified public FDA data with advanced AI reasoning.</strong></li>
         <li><strong>- &nbsp; We help teams identify predicates, review precedent submissions, and surface relevant justification language in seconds.</strong></li>
@@ -678,14 +678,14 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <br/>
         <p>The strongest 510(k) submissions are not just complete, they are strategic. They leverage precedent, use clear justification language, and proactively address reviewer concerns. To illustrate these principles, we looked at the Aspire RX-LP6 Aspiration Catheter (Model ARX-LP6) from Zien Medical Technologies, which is listed in FDA’s Global Unique Device Identification Database (GUDID) and cleared for commercial distribution.</p>
         <br/>
-        <p>This device served as one of our internal demo cases during the development of AgentAstro — a chance to stress-test the platform’s ability to surface predicate matches, uncover submission structure patterns, and accelerate review preparation.</p>
+        <p>This device served as one of our internal demo cases during the development of Agent Astro — a chance to stress-test the platform’s ability to surface predicate matches, uncover submission structure patterns, and accelerate review preparation.</p>
         <h2>What Is the Aspire RX-LP6?</h2>
         <p>The Aspire RX-LP6 is part of a mechanical thrombectomy system used to remove fresh, soft emboli and thrombi from the coronary and peripheral vasculature. Like many Class II devices, it followed the 510(k) pathway by demonstrating substantial equivalence to a legally marketed predicate.</p>
         <br/>
         <p>While FDA records do not disclose every detail of the clearance, the device provides a useful example of how strategic choices in predicate selection, equivalence justification, and testing can support a strong submission.</p>
         <h2>Breaking Down the Submission: Key Lessons</h2>
         <h3>1. Predicate Device Selection</h3>
-        <p>The Aspire RX-LP6 relied on a well-matched predicate. Using AgentAstro, we identified potential candidates 
+        <p>The Aspire RX-LP6 relied on a well-matched predicate. Using Agent Astro, we identified potential candidates 
         by product code, intended use, and technological characteristics. This kind of structured search helps teams avoid 
         weak matches that can lead to additional questions.
         </p>
@@ -693,7 +693,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         narrow to the most defensible choice.</p>
         <h3>2. Substantial Equivalence Justification</h3>
         <p>In 510(k)s, clarity is critical. Substantial equivalence arguments must show how the new device is as safe and effective as the predicate, while addressing both similarities and differences.</p>
-        <p>AgentAstro helps surface how similar devices articulated equivalence in FDA summaries. These examples provide useful reference points, though each submission still requires device-specific rationales.</p>
+        <p>Agent Astro helps surface how similar devices articulated equivalence in FDA summaries. These examples provide useful reference points, though each submission still requires device-specific rationales.</p>
         <p>Takeaway: Precedent-informed language improves clarity, but justifications must always be tailored.</p>
         <h3>3. Technological Characteristics</h3>
         <p>FDA reviewers expect a structured comparison of device components, energy sources, and delivery mechanisms. Differences should be explained with supporting rationale or testing.</p>
@@ -702,7 +702,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <p>Testing aligned with recognized standards and predicate precedents helps reduce uncertainty. Public FDA summaries often reference bench and performance tests, and repeating proven protocols can limit avoidable questions.</p>
         <p>Takeaway: Aligning with known testing expectations helps streamline review, though FDA ultimately evaluates adequacy on a case-by-case basis.</p>
         <h3>5. Labeling and Indications for Use</h3>
-        <p>The Aspire RX-LP6’s indications for use were consistent with its product category. AgentAstro enables comparison of labeling language across similar 510(k) summaries, helping ensure submissions remain within precedent boundaries.</p>
+        <p>The Aspire RX-LP6’s indications for use were consistent with its product category. Agent Astro enables comparison of labeling language across similar 510(k) summaries, helping ensure submissions remain within precedent boundaries.</p>
         <p>Takeaway: Conservative claims reduce risk. Overreaching in indications often triggers additional scrutiny.</p>
         <h2>Why This Case Matters ? </h2>
         <p>The Aspire RX-LP6 illustrates that strong submissions are built on:</p>
@@ -713,18 +713,18 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         <li><strong>- &nbsp; Consistent labeling within established bounds.</strong></li>
         <li><strong>- &nbsp; Proactive framing of risks and mitigations.</strong></li>
         </ul>
-        <h2>Where AgentAstro Fits In?</h2>
-        <p>Our platform was built to support exactly this kind of strategic approach. With Aspire RX-LP6 as a demo case, AgentAstro:</p>
+        <h2>Where Agent Astro Fits In?</h2>
+        <p>Our platform was built to support exactly this kind of strategic approach. With Aspire RX-LP6 as a demo case, Agent Astro:</p>
         <ul>
         <li><strong>- &nbsp; Surfaced potential predicates by product code and intended use.</strong></li>
         <li><strong>- &nbsp; Highlighted excerpts from FDA summaries relevant to equivalence arguments.</strong></li>
         <li><strong>- &nbsp; Provided reference language drawn from past clearances.</strong></li>
         <li><strong>- &nbsp; Helped map device characteristics to known review expectations.</strong></li>
         </ul>
-        <p>AgentAstro does not replace regulatory expertise — it accelerates it.</p>
+        <p>Agent Astro does not replace regulatory expertise — it accelerates it.</p>
         <h3>Final Thought: Build on What Works</h3>
         <p>Every cleared 510(k) adds to the body of public knowledge. Teams that know how to use this information strategically can avoid reinventing the wheel, reduce inefficiency, and strengthen submissions.</p>
-        <p>The Aspire RX-LP6 is just one example, but the lesson is broader: the playbook is already written. The challenge is making it searchable, usable, and actionable — and that is where AgentAstro comes in.</p>
+        <p>The Aspire RX-LP6 is just one example, but the lesson is broader: the playbook is already written. The challenge is making it searchable, usable, and actionable — and that is where Agent Astro comes in.</p>
         `
     }
 ];
