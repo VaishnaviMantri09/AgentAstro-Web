@@ -176,7 +176,7 @@ const FeaturesPage = () => {
                 <div className="text-center bg-gradient-to-r bg-[#EBEEF2] rounded-3xl p-12 text-gray-900 mt-16 mb-16">
                     <h3 className="text-3xl font-bold mb-4 font-gesta">Ready to Accelerate Your FDA Submissions?</h3>
                     <p className="text-xl font-semibold opacity-90 mb-8 max-w-2xl mx-auto font-gesta">
-                        Join regulatory teams already using AgentAstro to streamline submissions, cut costs, and move faster with confidence.
+                        Join regulatory teams already using Agent Astro to streamline submissions, cut costs, and move faster with confidence.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/started">
