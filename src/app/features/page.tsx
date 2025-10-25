@@ -22,7 +22,7 @@ const FeaturesPage = () => {
             title: 'Detailed Regulatory Reporting',
             description: 'Generate expert level reports that compile and Contextualize FDA data to support your substantial equivalence narrative.',
             benefit: 'Strengthen your submission with clear documentation.',
-            imageUrl: '/Features/regulatory-reporting.jpg',
+            imageUrl: '/Features/regulatory-reporting.jpeg',
             imageAlt: 'Detailed Regulatory Reporting',
         },
         {
@@ -30,7 +30,7 @@ const FeaturesPage = () => {
             title: 'Secure & Compliant',
             description: 'Your private information is protected and never used to train AI models. All subscriber data is encrypted in transit and at rest, with strict safeguards to ensure confidentiality.',
             benefit: 'Enterprise-grade protection for sensitive regulatory work.',
-            imageUrl: '/Features/secure-compliant.png',
+            imageUrl: '/Features/secure-compliant.jpeg',
             imageAlt: 'Secure & Compliant',
         },
         {
