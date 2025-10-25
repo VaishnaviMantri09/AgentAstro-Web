@@ -42,7 +42,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         id: 2,
         title: "QSR is out. QMSR is in. Here’s what that means for your FDA strategy.",
         excerpt: "The FDA has officially begun its shift from the decades-old Quality System Regulation (QSR) to the new Quality Management System Regulation (QMSR)",
-        image: '/Articles/article-2.jpg',
+        image: '/Articles/article-2.jpeg',
         featured: false,
         content: `
         <p>Big changes are underway in U.S. medical device regulation. The FDA has officially begun its shift from the decades-old Quality System Regulation (QSR) to the new Quality Management System Regulation (QMSR), and it’s going to impact how every FDA-facing company manages quality, documentation, and inspection readiness.</p>
@@ -378,7 +378,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         id: 8,
         title: "Usability Testing and Human Factors: Designing for Real-World Use",
         excerpt: "Usability testing and human factors engineering are no longer optional extras in medical device submissions. They are core components of demonstrating safety and effectiveness, especially as devices become more complex and user interfaces more critical.",
-        image: '/Articles/article-8.jpeg',
+        image: '/Articles/article-8.jpg',
         featured: false,
         content: `
         <p>Use-related issues are a major focus of the FDA’s human-factors program and a recurring theme in postmarket reports; robust usability engineering reduces recall risk. The FDA has steadily raised its expectations around human factors and usability engineering, making it clear that demonstrating “safe and effective use” requires more than clear labeling. It requires structured studies that reflect how real users interact with devices in real-world environments.</p>
@@ -537,7 +537,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         id: 11,
         title: "The FDA playbook is written in public — here’s how we make it searchable",
         excerpt: "The data is all there. The problem is finding it — fast enough to matter.",
-        image: '/Articles/article-11.jpg',
+        image: '/Articles/article-11.jpeg',
         featured: false,
         content: `
         <p>If you work in medical device regulation, you’ve likely felt the frustration: you know the FDA has approved similar devices, issued guidance, and published summaries — and yet you spend hours, sometimes days, trying to find the information you need.</p>
@@ -615,7 +615,7 @@ const rawArticles: Omit<Article, 'slug'>[] = [
         id: 12,
         title: "The Future of Regulatory Affairs: How AI is Transforming the Process",
         excerpt: "Artificial Intelligence (AI) is no longer a futuristic concept; it’s actively reshaping industries, and regulatory affairs (RA) is no exception. From automating routine tasks to enhancing decision-making, AI is poised to revolutionize how medical device companies navigate the complex regulatory landscape.",
-        image: '/Articles/article-12.png',
+        image: '/Articles/article-12.jpeg',
         featured: false,
         content: `
         <p>For decades, regulatory affairs has been a discipline defined by depth, rigor, and expertise. While medical device technology has advanced at a rapid pace, the regulatory process has lagged behind — still reliant on manual research, static documents, and legacy systems that have barely changed in a generation.</p>
